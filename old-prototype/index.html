@@ -195,79 +195,88 @@
         </div>
     </section>
 
-    <section id="planes" class="py-24 bg-slate-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 uppercase italic">Elige tu Plan</h2>
-                <p class="mt-4 text-slate-500 font-bold max-w-xl mx-auto">Selecciona el curso que mejor se adapte a ti. Tramitamos tus certificados rápidamente tras aprobar.</p>
+    <section id="planes" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-30 pointer-events-none">
+            <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-gradient-to-b from-yellow-100 to-transparent blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-20">
+                <span class="text-yellow-500 font-black tracking-widest uppercase text-sm mb-2 block">Matrículas Abiertas</span>
+                <h2 class="text-4xl md:text-5xl font-black text-slate-900 uppercase italic">Elige tu Plan de Conducción</h2>
+                <div class="h-1.5 w-24 bg-yellow-400 mx-auto mt-6"></div>
+                <p class="mt-6 text-slate-500 font-bold max-w-xl mx-auto text-lg">Inicia tu proceso de compra aquí. Tramitamos tus certificados rápidamente tras aprobar.</p>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8 items-end max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
                 
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col mb-4 lg:mb-0">
-                    <div class="p-8">
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
+                    <div class="p-10">
                         <h3 class="text-2xl font-black text-slate-900 uppercase italic">Reforzamiento</h3>
-                        <p class="text-slate-500 text-sm font-bold mt-2 h-10">Si ya tienes licencia pero el tráfico de Santiago te da terror.</p>
-                        <div class="text-4xl font-black my-6">$115.000</div>
-                        <ul class="space-y-3 text-sm font-bold text-slate-600 mb-8 border-t border-slate-100 pt-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 w-5"></i> 4 Clases Prácticas Citycar</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 w-5"></i> Repaso de estacionamiento</li>
-                            <li class="flex items-center gap-2 opacity-30"><i class="fa-solid fa-xmark text-slate-400 w-5"></i> Sin Teoría</li>
-                            <li class="flex items-center gap-2 opacity-30"><i class="fa-solid fa-xmark text-slate-400 w-5"></i> Sin Software Premium</li>
+                        <p class="text-slate-500 text-sm font-bold mt-3 h-12">Si ya tienes licencia pero el tráfico de Santiago te da terror.</p>
+                        <div class="text-5xl font-black my-8 text-slate-900">$115.000</div>
+                        <ul class="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>4 Clases Prácticas Citycar</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Repaso de estacionamiento</span></li>
+                            <li class="flex items-start gap-3 opacity-40"><i class="fa-solid fa-xmark text-slate-400 mt-1 text-lg"></i> <span>Sin Teoría ni Psicotécnico</span></li>
+                            <li class="flex items-start gap-3 opacity-40"><i class="fa-solid fa-xmark text-slate-400 mt-1 text-lg"></i> <span>Sin Software Premium</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-slate-50 border-t border-slate-100">
-                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20el%20Plan%20Reforzamiento" class="block w-full text-center font-black uppercase tracking-widest text-sm text-slate-600 border-2 border-slate-300 py-3 rounded hover:bg-slate-200 transition">Contactar</a>
+                    <div class="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
+                        <button onclick="openCheckout('Plan Reforzamiento', '$115.000')" class="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Seleccionar Plan
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col relative border-4 border-yellow-400 transform lg:-translate-y-6 z-10">
-                    <div class="bg-yellow-400 text-slate-900 text-center font-black text-[11px] py-2 uppercase tracking-widest flex justify-center items-center gap-2">
+                <div class="bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col relative border-4 border-yellow-400 transform lg:-translate-y-8 z-20">
+                    <div class="bg-yellow-400 text-slate-900 text-center font-black text-xs py-3 uppercase tracking-widest flex justify-center items-center gap-2">
                         <i class="fa-solid fa-star"></i> Plan Recomendado - Licencia Segura <i class="fa-solid fa-star"></i>
                     </div>
-                    <div class="p-8 text-white">
-                        <h3 class="text-3xl font-black uppercase italic">Plan Completo</h3>
-                        <p class="text-slate-400 text-sm font-bold mt-2 h-10">Formación total desde cero para rendir en tu Municipalidad.</p>
+                    <div class="p-10 text-white">
+                        <h3 class="text-4xl font-black uppercase italic">Plan Completo</h3>
+                        <p class="text-slate-300 text-sm font-bold mt-3 h-12">Formación total desde cero para rendir y aprobar en tu Municipalidad.</p>
                         
-                        <div class="mt-6 flex flex-col">
-                            <span class="line-through text-slate-500 font-bold text-lg">$212.500</span>
-                            <div class="flex items-end gap-2">
-                                <span class="text-5xl font-black text-yellow-400">$170.000</span>
-                                <span class="bg-red-500 text-white text-xs font-black px-2 py-1 rounded mb-2">20% OFF</span>
+                        <div class="mt-8 flex flex-col">
+                            <span class="line-through text-slate-500 font-bold text-xl decoration-2 decoration-red-500">$212.500</span>
+                            <div class="flex items-end gap-3 mt-1">
+                                <span class="text-6xl font-black text-yellow-400">$170.000</span>
                             </div>
-                            <span class="text-xs text-yellow-400 font-bold mt-1">Descuento exclusivo de web activa.</span>
+                            <span class="inline-block bg-red-500 text-white text-xs font-black px-3 py-1.5 rounded-md mt-3 w-max uppercase tracking-wider">20% OFF en Web</span>
                         </div>
 
-                        <ul class="space-y-4 text-sm font-bold text-slate-200 mb-8 mt-8 border-t border-slate-700 pt-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-yellow-400 w-5"></i> <strong>12 Clases Prácticas</strong> en Citycar</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-yellow-400 w-5"></i> Clases Teóricas Completas</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-yellow-400 w-5"></i> Test Psicotécnico Oficial</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-yellow-400 w-5"></i> <strong>Acceso a Software Premium</strong></li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-yellow-400 w-5"></i> <strong>Auto Préstamo Municipal</strong></li>
+                        <ul class="space-y-5 text-sm font-bold text-slate-200 mb-10 mt-10 border-t border-slate-700 pt-8">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>12 Clases Prácticas</strong> en Citycar</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span>Clases Teóricas Completas</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span>Test Psicotécnico Oficial</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>Acceso a Software Premium</strong></span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>Auto Préstamo Municipal</strong></span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-slate-800 border-t border-slate-700">
-                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20el%20Plan%20Completo%20con%20el%2020%25%20de%20descuento%20($170.000)" class="block w-full text-center bg-yellow-400 text-slate-900 py-4 rounded font-black uppercase tracking-widest hover:bg-white transition flex items-center justify-center gap-2">
-                            Matricularme por WhatsApp
-                        </a>
+                    <div class="p-8 bg-slate-800 border-t border-slate-700 mt-auto">
+                        <button onclick="openCheckout('Plan Completo', '$170.000')" class="w-full text-center bg-yellow-400 text-slate-900 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(250,204,21,0.4)]">
+                            Comprar Ahora
+                        </button>
                     </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col mb-4 lg:mb-0">
-                    <div class="p-8">
+                <div class="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
+                    <div class="p-10">
                         <h3 class="text-2xl font-black text-slate-900 uppercase italic">Plan Básico</h3>
-                        <p class="text-slate-500 text-sm font-bold mt-2 h-10">El estándar para quienes ya tienen talento natural.</p>
-                        <div class="text-4xl font-black my-6">$155.000</div>
-                        <ul class="space-y-3 text-sm font-bold text-slate-600 mb-8 border-t border-slate-100 pt-6">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 w-5"></i> 8 Clases Prácticas (45 min)</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 w-5"></i> Clases Teóricas Básicas</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500 w-5"></i> Test Psicotécnico Oficial</li>
-                            <li class="flex items-center gap-2 opacity-30"><i class="fa-solid fa-xmark text-slate-400 w-5"></i> Sin Software Premium</li>
-                            <li class="flex items-center gap-2 opacity-30"><i class="fa-solid fa-xmark text-slate-400 w-5"></i> Auto Municipal NO Incluido</li>
+                        <p class="text-slate-500 text-sm font-bold mt-3 h-12">El estándar para quienes ya tienen talento natural al volante.</p>
+                        <div class="text-5xl font-black my-8 text-slate-900">$155.000</div>
+                        <ul class="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>8 Clases Prácticas (45 min)</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Clases Teóricas Básicas</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Test Psicotécnico Oficial</span></li>
+                            <li class="flex items-start gap-3 opacity-40"><i class="fa-solid fa-xmark text-slate-400 mt-1 text-lg"></i> <span>Sin Software Premium</span></li>
+                            <li class="flex items-start gap-3 opacity-40"><i class="fa-solid fa-xmark text-slate-400 mt-1 text-lg"></i> <span>Auto Municipal NO Incluido</span></li>
                         </ul>
                     </div>
-                    <div class="p-6 bg-slate-50 border-t border-slate-100">
-                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20el%20Plan%20Básico" class="block w-full text-center font-black uppercase tracking-widest text-sm text-slate-600 border-2 border-slate-300 py-3 rounded hover:bg-slate-200 transition">Contactar</a>
+                    <div class="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
+                        <button onclick="openCheckout('Plan Básico', '$155.000')" class="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                            Seleccionar Plan
+                        </button>
                     </div>
                 </div>
 
@@ -567,6 +576,157 @@
             modal.style.display = "none";
         }
         window.onclick = function(event) { if (event.target == modal) closeBlog(); }
+    </script>
+    <div id="checkoutModal" class="hidden fixed inset-0 z-[100] bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl relative transform scale-95 transition-transform duration-300" id="checkoutModalContent">
+            
+            <div class="bg-slate-900 p-8 text-white relative">
+                <button onclick="closeCheckout()" class="absolute top-6 right-6 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+                <div class="flex items-center gap-3 mb-2">
+                    <i class="fa-solid fa-lock text-yellow-400"></i>
+                    <span class="text-xs font-black uppercase tracking-widest text-yellow-400">Reserva Segura</span>
+                </div>
+                <h3 class="text-3xl font-black italic uppercase">Completar Matrícula</h3>
+                <p class="text-sm text-slate-400 mt-2 font-bold">Ingresa tus datos para generar tu orden de ingreso a la escuela.</p>
+            </div>
+
+            <div class="p-8">
+                <div class="mb-6 p-4 bg-yellow-50 border border-yellow-200 rounded-xl flex justify-between items-center shadow-inner">
+                    <div>
+                        <span class="block text-xs font-black text-slate-500 uppercase tracking-wider mb-1">Plan Seleccionado</span>
+                        <span class="font-black text-slate-900 text-lg italic uppercase" id="checkout-plan-name">Plan Completo</span>
+                    </div>
+                    <div class="text-right">
+                        <span class="block text-xs font-black text-slate-500 uppercase tracking-wider mb-1">Total a Pagar</span>
+                        <span class="font-black text-slate-900 text-2xl" id="checkout-plan-price">$170.000</span>
+                    </div>
+                </div>
+
+                <form id="checkoutForm" onsubmit="processCheckout(event)" class="space-y-5">
+                    
+                    <div>
+                        <label class="block text-xs font-black text-slate-700 uppercase tracking-wider mb-2">Nombre Completo del Alumno</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                <i class="fa-regular fa-user text-slate-400"></i>
+                            </div>
+                            <input type="text" id="chk-name" required class="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold text-slate-900 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition-all" placeholder="Ej: Juan Pérez">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-black text-slate-700 uppercase tracking-wider mb-2">WhatsApp</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i class="fa-brands fa-whatsapp text-slate-400"></i>
+                                </div>
+                                <input type="tel" id="chk-phone" required class="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold text-slate-900 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition-all" placeholder="+56 9...">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-black text-slate-700 uppercase tracking-wider mb-2">Sede de Interés</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                    <i class="fa-solid fa-location-dot text-slate-400"></i>
+                                </div>
+                                <select id="chk-sede" required class="w-full pl-11 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold text-slate-900 focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition-all appearance-none">
+                                    <option value="" disabled selected>Selecciona...</option>
+                                    <option value="Sede Macul">Sede Macul</option>
+                                    <option value="Sede Peñalolén">Sede Peñalolén</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                                    <i class="fa-solid fa-chevron-down text-slate-400 text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#1EBE57] text-white font-black py-4 rounded-xl uppercase tracking-widest text-sm transition-all duration-300 flex justify-center items-center gap-3 shadow-lg shadow-green-500/30">
+                            Continuar a WhatsApp <i class="fa-brands fa-whatsapp text-xl"></i>
+                        </button>
+                        <p class="text-center text-xs text-slate-400 font-bold mt-4">
+                            <i class="fa-solid fa-shield-halved mr-1"></i> Tu información será enviada directamente a nuestros asesores.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- LÓGICA DEL CHECKOUT (EMBUDO) ---
+        const checkoutModal = document.getElementById('checkoutModal');
+        const checkoutModalContent = document.getElementById('checkoutModalContent');
+        let selectedPlanData = { name: '', price: '' };
+
+        function openCheckout(planName, planPrice) {
+            // Guardar datos del plan
+            selectedPlanData.name = planName;
+            selectedPlanData.price = planPrice;
+            
+            // Actualizar UI del modal
+            document.getElementById('checkout-plan-name').innerText = planName;
+            document.getElementById('checkout-plan-price').innerText = planPrice;
+            
+            // Mostrar modal con animación
+            checkoutModal.classList.remove('hidden');
+            // Pequeño timeout para que la transición de CSS funcione
+            setTimeout(() => {
+                checkoutModal.classList.remove('opacity-0');
+                checkoutModalContent.classList.remove('scale-95');
+                checkoutModalContent.classList.add('scale-100');
+            }, 10);
+            
+            // Bloquear scroll de fondo
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeCheckout() {
+            // Ocultar modal con animación
+            checkoutModal.classList.add('opacity-0');
+            checkoutModalContent.classList.remove('scale-100');
+            checkoutModalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                checkoutModal.classList.add('hidden');
+            }, 300); // Esperar que termine la transición
+            
+            // Desbloquear scroll
+            document.body.style.overflow = "auto";
+        }
+
+        function processCheckout(event) {
+            event.preventDefault(); // Evitar que la página recargue
+            
+            // Capturar datos del formulario
+            const name = document.getElementById('chk-name').value;
+            const phone = document.getElementById('chk-phone').value;
+            const sede = document.getElementById('chk-sede').value;
+            
+            // Construir el mensaje formateado para WhatsApp
+            const message = `¡Hola Escuela Futuro! 🚗💨%0A%0AVengo desde la página web y quiero gestionar mi matrícula.%0A%0A*DATOS DEL ALUMNO:*%0A👤 Nombre: ${name}%0A📱 Teléfono: ${phone}%0A📍 Sede elegida: ${sede}%0A%0A*DETALLE DE COMPRA:*%0A📌 Plan: ${selectedPlanData.name}%0A💰 Valor: ${selectedPlanData.price}%0A%0A¿Me pueden ayudar con los métodos de pago para asegurar mi cupo?`;
+            
+            // Número de WhatsApp de la escuela (Aquí pones el número real, ej: 56912345678)
+            const whatsappNumber = "56900000000"; 
+            
+            // Redirigir a WhatsApp
+            window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+            
+            // Cerrar el modal y resetear el form por si el usuario vuelve
+            closeCheckout();
+            document.getElementById('checkoutForm').reset();
+        }
+
+        // Cerrar modal si hacen clic fuera de la caja blanca
+        checkoutModal.addEventListener('click', function(e) {
+            if (e.target === checkoutModal) {
+                closeCheckout();
+            }
+        });
     </script>
 </body>
 </html>

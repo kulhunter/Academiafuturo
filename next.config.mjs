@@ -1,0 +1,23 @@
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let assetPrefix = '';
+let basePath = '';
+
+if (isGithubActions) {
+  // Trim off `<owner>/`
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    output: 'export',
+    basePath: basePath,
+    assetPrefix: assetPrefix,
+    images: {
+        unoptimized: true,
+    }
+};
+
+export default nextConfig;

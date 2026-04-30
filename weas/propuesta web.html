@@ -1,0 +1,121 @@
+<section id="planes" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-slate-900 italic uppercase">Encuentra el Plan ideal para ti</h2>
+                <p class="mt-4 text-slate-500 font-bold max-w-2xl mx-auto">En Escuela Futuro no corremos. Nos tomamos el tiempo necesario para que aprendas con seguridad y sin estrés.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 items-stretch">
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 flex flex-col">
+                    <h3 class="text-xl font-black uppercase text-slate-400 italic">Reforzamiento</h3>
+                    <p class="text-slate-600 text-sm mt-2">¿Ya tienes licencia pero te da miedo salir al tráfico solo?</p>
+                    <div class="text-4xl font-black my-8">$115.000</div>
+                    <ul class="space-y-4 mb-10 text-sm font-bold text-slate-500 flex-grow">
+                        <li><i class="fa-solid fa-heart text-amber-500 mr-2"></i> Clases 1 a 1 con paciencia extrema</li>
+                        <li><i class="fa-solid fa-car text-amber-500 mr-2"></i> Manejo en vías de alta fluidez</li>
+                        <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Estacionamiento sin presiones</li>
+                    </ul>
+                    <button onclick="openCheckout('Reforzamiento', '$115.000')" class="w-full py-4 border-2 border-slate-200 rounded-xl font-black uppercase tracking-widest text-xs hover:border-slate-900 transition">Solicitar Información</button>
+                </div>
+
+                <div class="bg-slate-900 p-10 rounded-3xl text-white relative transform lg:scale-105 shadow-2xl border-4 border-amber-400 flex flex-col">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-900 px-6 py-1 rounded-full text-xs font-black uppercase italic">Nuestra Especialidad</div>
+                    <h3 class="text-2xl font-black uppercase italic text-amber-400">Plan Completo Clase B</h3>
+                    <p class="text-slate-400 text-sm mt-2 italic">Aprende desde cero en un ambiente seguro y amable.</p>
+                    <div class="mt-8 flex flex-col">
+                        <span class="text-slate-500 line-through font-bold">$212.500</span>
+                        <div class="flex items-center gap-3">
+                            <span class="text-5xl font-black text-white">$170.000</span>
+                            <span class="bg-green-500 text-white text-[10px] px-2 py-1 rounded font-black uppercase tracking-tighter">Promoción Web</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 my-10 text-sm font-bold text-slate-300 flex-grow">
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> 12 Clases Prácticas (45 min)</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Curso Teórico y Psicotécnico</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> <strong>Paciencia infinita de tu instructor</strong></li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Acceso a App de Ensayo en casa</li>
+                        <li><i class="fa-solid fa-check text-amber-400 mr-2"></i> Auto para tu examen en el municipio</li>
+                    </ul>
+                    <button onclick="openCheckout('Plan Completo', '$170.000')" class="w-full py-5 bg-amber-400 text-slate-900 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white transition shadow-lg shadow-amber-400/20">Quiero inscribirme</button>
+                </div>
+
+                <div class="bg-slate-50 p-10 rounded-3xl border border-slate-100 flex flex-col">
+                    <h3 class="text-xl font-black uppercase text-slate-400 italic">Plan Básico</h3>
+                    <p class="text-slate-600 text-sm mt-2">Para quienes tienen nociones pero necesitan certificarse.</p>
+                    <div class="text-4xl font-black my-8">$155.000</div>
+                    <ul class="space-y-4 mb-10 text-sm font-bold text-slate-500 flex-grow">
+                        <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> 8 Clases Prácticas personalizadas</li>
+                        <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Curso Teórico y Psicotécnico</li>
+                        <li><i class="fa-solid fa-check text-amber-500 mr-2"></i> Evaluación previa de nivel</li>
+                    </ul>
+                    <button onclick="openCheckout('Básico', '$155.000')" class="w-full py-4 border-2 border-slate-200 rounded-xl font-black uppercase tracking-widest text-xs hover:border-slate-900 transition">Me interesa</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="checkoutModal" class="hidden fixed inset-0 z-[100] bg-slate-900/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl w-full max-w-lg overflow-hidden shadow-2xl relative">
+            <button onclick="closeCheckout()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-900"><i class="fa-solid fa-xmark text-2xl"></i></button>
+            <div class="p-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3 class="text-2xl font-black uppercase italic">¡Felicidades por este paso!</h3>
+                </div>
+                <p class="text-slate-500 font-bold text-sm mb-8">Queremos conocerte para asignarte al instructor con más paciencia. Déjanos tus datos y te guiaremos paso a paso.</p>
+                
+                <form onsubmit="processCheckout(event)" class="space-y-4">
+                    <input type="hidden" id="plan_hidden">
+                    <input type="hidden" id="price_hidden">
+                    
+                    <div>
+                        <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Tu Nombre Completo</label>
+                        <input type="text" id="chk-name" required class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold focus:outline-none focus:border-amber-400 transition" placeholder="Ej: Maria González">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Tu WhatsApp</label>
+                            <input type="tel" id="chk-phone" required class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold focus:outline-none focus:border-amber-400 transition" placeholder="+56 9...">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Sede más cercana</label>
+                            <select id="chk-sede" required class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm font-bold focus:outline-none focus:border-amber-400 transition appearance-none">
+                                <option value="Macul">Sede Macul</option>
+                                <option value="Peñalolén">Sede Peñalolén</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-5 bg-green-500 text-white rounded-xl font-black uppercase tracking-widest text-sm hover:bg-green-600 transition flex items-center justify-center gap-3 shadow-xl shadow-green-500/20 mt-6">
+                        Hablar con un asesor <i class="fa-brands fa-whatsapp text-xl"></i>
+                    </button>
+                    <p class="text-center text-[10px] font-bold text-slate-400 mt-4 uppercase tracking-tighter">Al presionar, nos pondremos en contacto contigo para resolver todas tus dudas.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCheckout(name, price) {
+            document.getElementById('plan_hidden').value = name;
+            document.getElementById('price_hidden').value = price;
+            document.getElementById('checkoutModal').classList.remove('hidden');
+            document.body.style.overflow = "hidden";
+        }
+        function closeCheckout() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+            document.body.style.overflow = "auto";
+        }
+        function processCheckout(e) {
+            e.preventDefault();
+            const n = document.getElementById('chk-name').value;
+            const p = document.getElementById('chk-phone').value;
+            const s = document.getElementById('chk-sede').value;
+            const plan = document.getElementById('plan_hidden').value;
+            
+            const msg = `¡Hola Escuela Futuro! 👋 Me llamo ${n} y estoy interesado en el ${plan}.%0A📍 Me queda más cerca la sede de ${s}.%0A¿Me podrían orientar sobre cómo son las clases y los horarios? Muchas gracias.`;
+            window.open(`https://wa.me/56900000000?text=${msg}`, '_blank');
+            closeCheckout();
+        }
+    </script>

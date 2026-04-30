@@ -3,215 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuela de Conductores Futuro | Oficial</title>
+    <title>Escuela de Conductores Futuro | Especialistas en Licencia Clase B</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800;900&display=swap');
         
         body { font-family: 'Urbanist', sans-serif; }
 
-        .checker-bg {
-            background-image: conic-gradient(#fff 0.25turn, #000 0.25turn 0.5turn, #fff 0.5turn 0.75turn, #000 0.75turn);
-            background-size: 15px 15px;
+        .checker-pattern {
+            background-image: conic-gradient(#ffffff 90deg, #0f172a 90deg 180deg, #ffffff 180deg 270deg, #0f172a 270deg);
+            background-size: 20px 20px;
         }
 
-        .hero-gradient {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+        .hero-bg {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 100%), 
                         url('https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/622657250_18079451723010387_6531971613768587850_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=58cdad&oh=00_Af0YRPYlO4PGs0VRDBNQdSy_1fP97txJ_6cFu3Uy8tklXg&oe=69F9A933');
             background-size: cover;
             background-position: center;
         }
-
-        .logo-box {
-            display: grid;
-            grid-template-columns: repeat(4, 5px);
-            gap: 2px;
-        }
-        .black-q { width: 5px; height: 5px; background: #000; }
-        .white-q { width: 5px; height: 5px; background: #fff; border: 1px solid #ddd; }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-slate-800">
 
-    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 hidden md:block">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center font-semibold">
+            <div class="flex gap-6">
+                <span><i class="fa-solid fa-clock text-yellow-400 mr-1"></i> Lunes a Viernes: 09:00 - 19:00 hrs</span>
+                <span><i class="fa-solid fa-location-dot text-yellow-400 mr-1"></i> Tu Comuna, Santiago</span>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fa-brands fa-facebook text-lg"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <div class="flex flex-col">
-                    <div class="flex">
-                        <div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div>
-                    </div>
-                    <div class="flex">
-                        <div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div>
-                    </div>
-                    <div class="bg-blue-900 text-white px-2 py-1 text-[10px] font-black italic tracking-tighter uppercase">
-                        Futuro
-                    </div>
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 flex flex-wrap">
+                    <div class="w-1/2 h-1/2 bg-slate-900"></div><div class="w-1/2 h-1/2 bg-yellow-400"></div>
+                    <div class="w-1/2 h-1/2 bg-yellow-400"></div><div class="w-1/2 h-1/2 bg-slate-900"></div>
                 </div>
                 <div class="leading-none">
-                    <span class="block text-xl font-black text-blue-900 tracking-tighter uppercase">Escuela de Conductores</span>
-                    <span class="text-xs font-bold text-gray-400 tracking-[0.2em] uppercase">Excelencia Vial</span>
+                    <span class="block text-2xl font-black text-slate-900 uppercase italic tracking-tighter">Futuro</span>
+                    <span class="text-[10px] font-bold text-slate-500 tracking-[0.2em] uppercase">Escuela de Conductores</span>
                 </div>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 font-bold text-slate-600 text-sm uppercase tracking-wide">
+                <a href="#requisitos" class="hover:text-yellow-500 transition">Requisitos</a>
+                <a href="#planes" class="hover:text-yellow-500 transition">Cursos y Valores</a>
+                <a href="#simulador" class="hover:text-yellow-500 transition">Ensayo Municipal</a>
+                <a href="#blog" class="hover:text-yellow-500 transition">Blog Vial</a>
             </div>
 
-            <div class="hidden lg:flex items-center gap-8 font-bold text-gray-600 text-sm">
-                <a href="#planes" class="hover:text-blue-900">CURSOS</a>
-                <a href="#software" class="hover:text-blue-900">SIMULADOR</a>
-                <a href="#blog" class="hover:text-blue-900">CONSEJOS</a>
-                <a href="https://wa.me/56922721" target="_blank" class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-black transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp"></i> MATRÍCULAS
-                </a>
-            </div>
+            <a href="https://wa.me/56900000000" target="_blank" class="hidden md:flex bg-green-500 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-green-600 transition items-center gap-2 shadow-lg shadow-green-500/30">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Matrículas
+            </a>
         </div>
     </nav>
 
-    <header class="hero-gradient h-[650px] flex items-center text-white">
-        <div class="max-w-7xl mx-auto px-4 w-full grid lg:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <div class="inline-flex items-center gap-2 bg-yellow-400 text-black font-black px-4 py-1 rounded-sm skew-x-[-12deg] text-sm uppercase">
-                    Inscripciones Abiertas 2024
+    <header class="hero-bg min-h-[600px] flex items-center relative overflow-hidden">
+        <div class="checker-pattern h-4 w-full absolute bottom-0 left-0"></div>
+        <div class="max-w-7xl mx-auto px-4 w-full py-20 relative z-10">
+            <div class="max-w-2xl text-white">
+                <div class="inline-block bg-yellow-400 text-slate-900 font-black px-4 py-1 rounded-sm text-sm uppercase tracking-widest mb-6">
+                    Aprobación Garantizada
                 </div>
-                <h1 class="text-5xl lg:text-7xl font-black leading-[0.9] italic">Maneja tu destino, <br><span class="text-yellow-400 underline decoration-white decoration-4 underline-offset-8">conducimos contigo.</span></h1>
-                <p class="text-lg text-gray-300 max-w-md font-medium">Formación profesional en citycars Clase B. Aprueba a la primera con nuestro sistema de acompañamiento y software exclusivo.</p>
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#planes" class="bg-white text-blue-900 font-black px-8 py-4 rounded-sm hover:bg-yellow-400 transition uppercase tracking-widest text-sm">Ver Planes Clase B</a>
-                    <a href="#software" class="border-2 border-white/30 backdrop-blur-sm px-8 py-4 rounded-sm font-black hover:bg-white hover:text-blue-900 transition uppercase tracking-widest text-sm">Probar Simulador</a>
-                </div>
-            </div>
-            <div class="hidden lg:flex justify-end items-center">
-                <div class="bg-white/10 backdrop-blur-xl p-8 border border-white/20 rounded-2xl w-80 rotate-3 shadow-2xl">
-                    <div class="flex gap-1 mb-4">
-                        <i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="italic font-bold text-lg">"Excelente escuela, los citycars son súper cómodos para aprender a estacionar. Aprobé a la primera!"</p>
-                    <div class="mt-4 flex items-center gap-3">
-                        <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold">JD</div>
-                        <span class="font-black text-sm">Juan Delgado - Alumno</span>
-                    </div>
+                <h1 class="text-5xl lg:text-7xl font-black leading-[1] italic uppercase tracking-tighter mb-6">
+                    Tu Licencia <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500">Clase B</span> Comienza Aquí.
+                </h1>
+                <p class="text-lg text-slate-300 font-medium mb-8 leading-relaxed">
+                    Aprende a conducir desde cero con instructores certificados, vehículos modernos (citycars) y nuestra plataforma exclusiva de ensayo municipal.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#planes" class="bg-yellow-400 text-slate-900 font-black px-8 py-4 rounded shadow-lg shadow-yellow-400/20 hover:bg-white transition text-center uppercase tracking-widest">
+                        Ver Planes y Valores
+                    </a>
+                    <a href="#simulador" class="bg-white/10 backdrop-blur-md border border-white/20 text-white font-black px-8 py-4 rounded hover:bg-white/20 transition text-center uppercase tracking-widest flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-laptop-code"></i> Probar Simulador
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="planes" class="py-24 max-w-7xl mx-auto px-4">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-black text-blue-900 italic tracking-tighter uppercase">Planes Clase B 2024</h2>
-            <div class="h-1.5 w-24 bg-yellow-400 mx-auto mt-4"></div>
-            <p class="mt-4 text-gray-500 font-bold">Selecciona tu nivel y reserva tu cupo por WhatsApp</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white border-2 border-gray-100 p-8 flex flex-col hover:border-blue-900 transition-all group relative overflow-hidden">
-                <div class="checker-bg h-2 w-full absolute top-0 left-0"></div>
-                <h3 class="text-2xl font-black text-blue-900 uppercase italic">Curso Básico</h3>
-                <p class="text-gray-400 text-xs font-bold mt-1">Ideal si ya sabes un poco</p>
-                <div class="my-8">
-                    <span class="text-4xl font-black">$125.000</span>
-                </div>
-                <ul class="space-y-4 text-sm font-bold text-gray-600 mb-10 flex-grow">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 6 Clases Prácticas (Citycar)</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Clases Teóricas Online</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Examen Psicotécnico</li>
-                    <li class="flex items-center gap-2 text-gray-300"><i class="fa-solid fa-xmark"></i> Préstamo de auto p/ municipal</li>
-                </ul>
-                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20matricularme%20en%20el%20Curso%20Básico%20($125.000)" target="_blank" class="w-full bg-blue-900 text-white py-4 font-black uppercase text-xs tracking-widest text-center group-hover:bg-green-500 transition-colors">Comprar vía WhatsApp</a>
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-slate-900 uppercase italic">¿Cómo obtener tu licencia con nosotros?</h2>
+                <div class="h-1 w-20 bg-yellow-400 mx-auto mt-4"></div>
             </div>
-
-            <div class="bg-blue-900 p-8 flex flex-col text-white shadow-2xl scale-105 relative overflow-hidden">
-                <div class="bg-yellow-400 text-blue-900 font-black px-4 py-1 absolute top-4 right-[-35px] rotate-45 w-40 text-center text-[10px] uppercase">Más Popular</div>
-                <h3 class="text-2xl font-black uppercase italic">Plan Full Futuro</h3>
-                <p class="text-blue-300 text-xs font-bold mt-1">Desde cero hasta la licencia</p>
-                <div class="my-8">
-                    <span class="text-4xl font-black">$155.000</span>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-50 border-2 border-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:border-yellow-400 transition-all duration-300">
+                        <i class="fa-solid fa-mobile-screen text-3xl text-slate-800"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-3">1. Cotiza y Matrículate</h3>
+                    <p class="text-slate-500 text-sm">Revisa nuestros planes en esta web y compra tu cupo directamente vía WhatsApp, sin papeleos.</p>
                 </div>
-                <ul class="space-y-4 text-sm font-bold text-blue-100 mb-10 flex-grow">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> 12 Clases Prácticas (Citycar)</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Clases Teóricas Ilimitadas</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Examen Psicotécnico</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Préstamo de auto p/ municipal</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Software de ensayo Premium</li>
-                </ul>
-                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20matricularme%20en%20el%20Plan%20Full%20Futuro%20($155.000)" target="_blank" class="w-full bg-yellow-400 text-blue-900 py-4 font-black uppercase text-xs tracking-widest text-center hover:bg-white transition-colors">Comprar vía WhatsApp</a>
-            </div>
-
-            <div class="bg-white border-2 border-gray-100 p-8 flex flex-col hover:border-blue-900 transition-all group relative overflow-hidden">
-                <div class="checker-bg h-2 w-full absolute top-0 left-0"></div>
-                <h3 class="text-2xl font-black text-blue-900 uppercase italic">Reforzamiento</h3>
-                <p class="text-gray-400 text-xs font-bold mt-1">¿Ya tienes licencia pero no manejas?</p>
-                <div class="my-8">
-                    <span class="text-4xl font-black">$95.000</span>
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-50 border-2 border-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:border-yellow-400 transition-all duration-300">
+                        <i class="fa-solid fa-car-side text-3xl text-slate-800"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-3">2. Teoría y Práctica</h3>
+                    <p class="text-slate-500 text-sm">Realiza tus clases teóricas online, ensaya en nuestro simulador y maneja nuestros citycars.</p>
                 </div>
-                <ul class="space-y-4 text-sm font-bold text-gray-600 mb-10 flex-grow">
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 4 Clases de manejo fluido</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Tips de estacionamiento pro</li>
-                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Manejo en autopistas</li>
-                </ul>
-                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20comprar%20el%20Plan%20de%20Reforzamiento%20($95.000)" target="_blank" class="w-full bg-blue-900 text-white py-4 font-black uppercase text-xs tracking-widest text-center group-hover:bg-green-500 transition-colors">Comprar vía WhatsApp</a>
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-slate-50 border-2 border-slate-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-400 group-hover:border-yellow-400 transition-all duration-300">
+                        <i class="fa-solid fa-id-card text-3xl text-slate-800"></i>
+                    </div>
+                    <h3 class="font-black text-xl mb-3">3. Rinde y Aprueba</h3>
+                    <p class="text-slate-500 text-sm">Preséntate en tu municipalidad con todos los conocimientos. (Te prestamos el auto para el examen).</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="software" class="bg-black py-24 text-white overflow-hidden">
+    <section id="requisitos" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute right-0 top-0 opacity-5 w-1/2 h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div>
+                <h2 class="text-4xl font-black uppercase italic mb-6">Requisitos Ley de Tránsito <br><span class="text-yellow-400">Licencia Clase B</span></h2>
+                <p class="text-slate-400 mb-8">Para inscribirte en nuestros cursos y rendir el examen municipal, debes cumplir con las normativas vigentes en Chile.</p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <div><strong class="block text-white">Cédula de Identidad</strong> Vigente y en buen estado.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <div><strong class="block text-white">Edad Mínima</strong> 18 años (o 17 años con autorización notarial de los padres y curso de escuela aprobado).</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <div><strong class="block text-white">Certificado de Estudios</strong> Acreditar haber egresado de 8vo básico como mínimo.</div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-green-400 mt-1"></i>
+                        <div><strong class="block text-white">Residencia</strong> Acreditar domicilio en la comuna donde rendirás el examen (con cuenta a tu nombre o certificado de junta de vecinos).</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-2xl">
+                <h3 class="text-xl font-bold mb-4 text-yellow-400">Nuestra Flota (Citycars)</h3>
+                <p class="text-slate-300 text-sm mb-6">Aprender a manejar no debe ser estresante. En Escuela Futuro contamos con <strong>2 vehículos Citycar</strong> perfectamente acondicionados con doble comando.</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-900 p-4 rounded-lg text-center border border-slate-700">
+                        <i class="fa-solid fa-gauge-high text-3xl text-slate-500 mb-2"></i>
+                        <h4 class="font-bold text-sm">Fácil de estacionar</h4>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-lg text-center border border-slate-700">
+                        <i class="fa-solid fa-shield-halved text-3xl text-slate-500 mb-2"></i>
+                        <h4 class="font-bold text-sm">Doble Comando</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planes" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black text-slate-900 uppercase italic">Nuestros Cursos</h2>
+                <p class="mt-4 text-slate-500 font-bold">Reserva tu cupo de forma rápida y segura a través de WhatsApp.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-xl transition-shadow">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-slate-900 uppercase italic">Plan Básico</h3>
+                        <p class="text-slate-500 text-sm mt-2 h-10">Ideal si ya tienes nociones básicas de conducción.</p>
+                        <div class="text-4xl font-black my-6">$110.000</div>
+                        <ul class="space-y-3 text-sm font-bold text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 6 Clases Prácticas (45 min)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Curso Teórico E-Learning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Examen Psicotécnico interno</li>
+                            <li class="flex items-center gap-2 opacity-40"><i class="fa-solid fa-xmark"></i> Préstamo de vehículo municipal</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto bg-slate-50 p-6 border-t border-slate-100">
+                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20comprar%20el%20Plan%20Básico%20de%20$110.000" target="_blank" class="block w-full bg-slate-900 text-white py-3 rounded-lg text-center font-bold hover:bg-green-500 transition-colors">Comprar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col relative transform lg:-translate-y-4 border-2 border-yellow-400">
+                    <div class="bg-yellow-400 text-slate-900 text-center font-black text-xs py-2 uppercase tracking-widest">El más recomendado</div>
+                    <div class="p-8 text-white">
+                        <h3 class="text-2xl font-black uppercase italic">Plan Completo</h3>
+                        <p class="text-slate-400 text-sm mt-2 h-10">Desde cero hasta obtener tu licencia con seguridad.</p>
+                        <div class="text-4xl font-black my-6 text-yellow-400">$145.000</div>
+                        <ul class="space-y-3 text-sm font-bold text-slate-300 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> 12 Clases Prácticas (45 min)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Curso Teórico E-Learning</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Examen Psicotécnico interno</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Acceso a Simulador Premium</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Préstamo vehículo municipal</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto bg-slate-800 p-6 border-t border-slate-700">
+                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20comprar%20el%20Plan%20Completo%20de%20$145.000" target="_blank" class="block w-full bg-yellow-400 text-slate-900 py-3 rounded-lg text-center font-black hover:bg-white transition-colors">Comprar por WhatsApp</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-xl transition-shadow">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-black text-slate-900 uppercase italic">Reforzamiento</h3>
+                        <p class="text-slate-500 text-sm mt-2 h-10">Para quienes tienen licencia pero perdieron la práctica.</p>
+                        <div class="text-4xl font-black my-6">$85.000</div>
+                        <ul class="space-y-3 text-sm font-bold text-slate-600 mb-8">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 5 Clases Prácticas de 45 min</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Práctica de estacionamiento</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Manejo en autopistas</li>
+                        </ul>
+                    </div>
+                    <div class="mt-auto bg-slate-50 p-6 border-t border-slate-100">
+                        <a href="https://wa.me/56900000000?text=Hola,%20quiero%20comprar%20el%20Plan%20Reforzamiento%20de%20$85.000" target="_blank" class="block w-full bg-slate-900 text-white py-3 rounded-lg text-center font-bold hover:bg-green-500 transition-colors">Comprar por WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="py-24 bg-yellow-400 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
-            <div class="relative">
-                <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-600/20 blur-[100px]"></div>
-                <h2 class="text-5xl font-black italic uppercase leading-none">Asegura tu <br><span class="text-blue-500 italic font-black">Aprobación.</span></h2>
-                <p class="mt-6 text-gray-400 font-medium text-lg">Todos nuestros alumnos tienen acceso gratuito a nuestro **Simulador Oficial de Examen Clase B**. Entrena con preguntas reales de la municipalidad.</p>
-                
-                <div class="mt-10 space-y-4">
-                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-black">01</div>
-                        <span class="font-bold">Preguntas actualizadas 2024</span>
+            <div class="order-2 lg:order-1 flex justify-center">
+                <div class="bg-slate-900 p-4 rounded-[2rem] shadow-2xl border-[8px] border-slate-800 w-full max-w-[320px] transform -rotate-6 hover:rotate-0 transition duration-500">
+                    <div class="bg-white rounded-2xl p-6 h-[500px] flex flex-col">
+                        <div class="text-center font-black text-slate-900 mb-6">Examen Conaset 2024</div>
+                        <div class="text-sm font-bold mb-4">Pregunta 12 de 35</div>
+                        <p class="text-sm text-slate-600 mb-6 font-semibold">¿Qué debe hacer si al acercarse a un cruce se enciende la luz amarilla del semáforo?</p>
+                        <div class="space-y-3">
+                            <div class="p-3 border-2 border-slate-200 rounded-lg text-sm">Acelerar para cruzar rápido.</div>
+                            <div class="p-3 bg-green-100 border-2 border-green-500 text-green-800 rounded-lg text-sm font-bold">Detenerse, a menos que ya no pueda hacerlo con seguridad.</div>
+                            <div class="p-3 border-2 border-slate-200 rounded-lg text-sm">Tocar la bocina y cruzar.</div>
+                        </div>
+                        <div class="mt-auto bg-slate-900 text-white text-center py-2 rounded-lg font-bold text-sm">Siguiente Pregunta</div>
                     </div>
-                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-black">02</div>
-                        <span class="font-bold">Corrección automática e inmediata</span>
-                    </div>
-                </div>
-
-                <div class="mt-10">
-                    <a href="https://kulhunter.github.io/examen_claseB/" target="_blank" class="bg-blue-600 text-white px-10 py-5 rounded-sm font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all inline-block">Probar Software Ahora</a>
                 </div>
             </div>
-            <div class="relative flex justify-center">
-                <div class="bg-gray-800 w-full max-w-sm rounded-3xl border-8 border-gray-700 overflow-hidden shadow-2xl">
-                    <div class="bg-white p-6 min-h-[400px] text-black">
-                        <div class="h-2 w-full bg-gray-100 mb-4"></div>
-                        <div class="h-2 w-3/4 bg-gray-100 mb-8"></div>
-                        <div class="space-y-4">
-                            <div class="p-4 border-2 border-blue-600 rounded-lg font-bold text-sm">Opción A: Detenerse totalmente</div>
-                            <div class="p-4 border-2 border-gray-100 rounded-lg font-bold text-sm">Opción B: Seguir a 20km/h</div>
-                            <div class="p-4 border-2 border-gray-100 rounded-lg font-bold text-sm">Opción C: Tocar la bocina</div>
-                        </div>
+            <div class="order-1 lg:order-2">
+                <h2 class="text-5xl font-black text-slate-900 italic uppercase mb-6 leading-tight">Plataforma de <br>Ensayo Exclusiva</h2>
+                <p class="text-lg text-slate-800 font-medium mb-8">
+                    La gran mayoría reprueba el examen teórico municipal por falta de preparación. Al matricularte en Futuro, te entregamos acceso a nuestro <strong>software oficial de ensayo</strong>, con las mismas preguntas y sistema de puntaje que encontrarás el día de tu prueba.
+                </p>
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-3 font-bold text-slate-900">
+                        <i class="fa-solid fa-bolt text-xl bg-white p-2 rounded-full shadow-sm"></i> Resultados Inmediatos
+                    </div>
+                    <div class="flex items-center gap-3 font-bold text-slate-900">
+                        <i class="fa-solid fa-mobile text-xl bg-white p-2 rounded-full shadow-sm"></i> Estudia desde tu Celular 24/7
                     </div>
                 </div>
+                <a href="https://kulhunter.github.io/examen_claseB/" target="_blank" class="bg-slate-900 text-white px-8 py-4 rounded-lg font-black uppercase tracking-widest shadow-xl hover:bg-slate-800 transition inline-block">
+                    Hacer Test de Prueba
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-20 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
-            <div class="col-span-2">
-                <div class="text-2xl font-black text-blue-900 uppercase italic">Escuela Futuro</div>
-                <p class="mt-4 text-gray-500 max-w-xs font-bold">Expertos en citycars y formación de nuevos conductores en Chile. Tu futuro al volante comienza hoy.</p>
+    <section id="blog" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-black text-slate-900 uppercase italic">Blog & Educación Vial</h2>
+                    <p class="mt-2 text-slate-500 font-bold">Consejos prácticos para futuros conductores.</p>
+                </div>
+                <a href="#" class="hidden md:block font-bold text-yellow-500 hover:text-slate-900 transition">Ver todos los artículos &rarr;</a>
             </div>
-            <div>
-                <h4 class="font-black uppercase text-sm mb-6">Navegación</h4>
-                <ul class="space-y-4 text-gray-400 font-bold text-sm">
-                    <li><a href="#planes" class="hover:text-blue-900">Planes de Manejo</a></li>
-                    <li><a href="#software" class="hover:text-blue-900">Simulador Online</a></li>
-                    <li><a href="#blog" class="hover:text-blue-900">Consejos Viales</a></li>
-                </ul>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i class="fa-solid fa-traffic-light text-4xl text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-black text-yellow-500 uppercase tracking-wider">Examen Municipal</span>
+                        <h3 class="text-lg font-black text-slate-900 mt-2 mb-3 leading-tight">Las 5 fallas reprobatorias más comunes en el examen práctico</h3>
+                        <p class="text-slate-600 text-sm mb-4">Conoce qué errores como no señalizar o rozar la cuneta pueden costarte la licencia inmediatamente.</p>
+                        <a href="#" class="text-sm font-bold text-slate-900 underline decoration-yellow-400 decoration-2">Leer artículo</a>
+                    </div>
+                </article>
+                
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i class="fa-solid fa-gauge text-4xl text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-black text-yellow-500 uppercase tracking-wider">Manejo Defensivo</span>
+                        <h3 class="text-lg font-black text-slate-900 mt-2 mb-3 leading-tight">Cómo perder el miedo al volante en tus primeras clases</h3>
+                        <p class="text-slate-600 text-sm mb-4">Técnicas de respiración y mentalidad para enfrentar el tráfico urbano con un citycar.</p>
+                        <a href="#" class="text-sm font-bold text-slate-900 underline decoration-yellow-400 decoration-2">Leer artículo</a>
+                    </div>
+                </article>
+
+                <article class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 hover:shadow-lg transition">
+                    <div class="h-48 bg-slate-200 flex items-center justify-center">
+                        <i class="fa-solid fa-car-burst text-4xl text-slate-400"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-black text-yellow-500 uppercase tracking-wider">Ley de Tránsito</span>
+                        <h3 class="text-lg font-black text-slate-900 mt-2 mb-3 leading-tight">Distancias de frenado: Todo lo que necesitas calcular</h3>
+                        <p class="text-slate-600 text-sm mb-4">Una guía rápida para entender la diferencia entre distancia de reacción y distancia de frenado total.</p>
+                        <a href="#" class="text-sm font-bold text-slate-900 underline decoration-yellow-400 decoration-2">Leer artículo</a>
+                    </div>
+                </article>
             </div>
-            <div>
-                <h4 class="font-black uppercase text-sm mb-6">Ubicación</h4>
-                <p class="text-gray-400 font-bold text-sm">Atención presencial y clases en todo el sector. <br><br> WhatsApp: +56 9 2272 1XXX</p>
+            
+            <div class="mt-8 text-center text-xs text-slate-400 font-bold bg-slate-100 py-2 rounded">
+                * La web final incluirá un catálogo con 10 artículos profesionales redactados y optimizados para Google (SEO).
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-gray-50 text-center text-xs font-bold text-gray-300">
-            © 2024 ESCUELA DE CONDUCTORES FUTURO. DISEÑADO PARA EL ÉXITO VIAL.
+    </section>
+
+    <section class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-slate-900 text-center uppercase italic mb-12">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-4">
+                <details class="bg-white p-6 rounded-lg border border-slate-200 cursor-pointer group">
+                    <summary class="font-black text-slate-800 list-none flex justify-between items-center">
+                        ¿Dónde se realizan las clases prácticas?
+                        <span class="text-yellow-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-4">Todas nuestras clases prácticas inician en la sede de la escuela y recorren calles autorizadas por la municipalidad, incluyendo prácticas de estacionamiento y tráfico real.</p>
+                </details>
+                
+                <details class="bg-white p-6 rounded-lg border border-slate-200 cursor-pointer group">
+                    <summary class="font-black text-slate-800 list-none flex justify-between items-center">
+                        ¿El examen psicotécnico está incluido?
+                        <span class="text-yellow-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-4">Sí, realizamos una evaluación psicométrica en nuestras instalaciones usando equipos calibrados (visión, reacción y audición) similar al que encontrarás en el municipio.</p>
+                </details>
+
+                <details class="bg-white p-6 rounded-lg border border-slate-200 cursor-pointer group">
+                    <summary class="font-black text-slate-800 list-none flex justify-between items-center">
+                        ¿Cómo funciona el préstamo del auto para el examen?
+                        <span class="text-yellow-500 group-open:rotate-180 transition-transform"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-slate-600 text-sm mt-4">Si contratas el Plan Completo, te acompañamos el día de tu examen práctico en la municipalidad y te prestamos el mismo citycar en el que aprendiste a manejar, para que rindas la prueba con total confianza.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="text-2xl font-black text-white uppercase italic tracking-tighter mb-4">Futuro</div>
+                <p class="text-sm font-bold leading-relaxed mb-6">
+                    Aprobación, seguridad y profesionalismo. Somos expertos en formar conductores para licencia Clase B.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-white hover:bg-yellow-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-black uppercase tracking-widest mb-6">Contáctanos</h4>
+                <ul class="space-y-4 text-sm font-bold">
+                    <li class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-yellow-400 text-lg"></i> +56 9 0000 0000</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-envelope text-yellow-400 text-lg"></i> contacto@escuelafuturo.cl</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-yellow-400 text-lg"></i> Av. Macul #9999, Macul, Santiago, Chile.</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-black uppercase tracking-widest mb-6">Links Rápidos</h4>
+                <ul class="space-y-2 text-sm font-bold">
+                    <li><a href="#planes" class="hover:text-yellow-400 transition">Comprar Cursos</a></li>
+                    <li><a href="#simulador" class="hover:text-yellow-400 transition">Acceso Alumnos (Simulador)</a></li>
+                    <li><a href="#requisitos" class="hover:text-yellow-400 transition">Requisitos Legales</a></li>
+                    <li><a href="#blog" class="hover:text-yellow-400 transition">Artículos Viales</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 py-6">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-500">
+                <p>&copy; 2026 Escuela de Conductores Futuro. Todos los derechos reservados.</p>
+                <p></p>
+            </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/56900000000?text=Hola,%20estoy%20en%20la%20web%20y%20quiero%20info%20de%20los%20cursos%20Clase%20B" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-50 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-white text-slate-900 px-4 py-2 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">
+            ¡Cotiza aquí!
+        </span>
+    </a>
 
 </body>
 </html>

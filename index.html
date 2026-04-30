@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela de Conductores Futuro | Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap');
+        
+        body { font-family: 'Urbanist', sans-serif; }
+
+        .checker-bg {
+            background-image: conic-gradient(#fff 0.25turn, #000 0.25turn 0.5turn, #fff 0.5turn 0.75turn, #000 0.75turn);
+            background-size: 15px 15px;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/622657250_18079451723010387_6531971613768587850_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=58cdad&oh=00_Af0YRPYlO4PGs0VRDBNQdSy_1fP97txJ_6cFu3Uy8tklXg&oe=69F9A933');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .logo-box {
+            display: grid;
+            grid-template-columns: repeat(4, 5px);
+            gap: 2px;
+        }
+        .black-q { width: 5px; height: 5px; background: #000; }
+        .white-q { width: 5px; height: 5px; background: #fff; border: 1px solid #ddd; }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="flex flex-col">
+                    <div class="flex">
+                        <div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div><div class="w-3 h-3 bg-white border border-gray-200"></div><div class="w-3 h-3 bg-black"></div>
+                    </div>
+                    <div class="bg-blue-900 text-white px-2 py-1 text-[10px] font-black italic tracking-tighter uppercase">
+                        Futuro
+                    </div>
+                </div>
+                <div class="leading-none">
+                    <span class="block text-xl font-black text-blue-900 tracking-tighter uppercase">Escuela de Conductores</span>
+                    <span class="text-xs font-bold text-gray-400 tracking-[0.2em] uppercase">Excelencia Vial</span>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-8 font-bold text-gray-600 text-sm">
+                <a href="#planes" class="hover:text-blue-900">CURSOS</a>
+                <a href="#software" class="hover:text-blue-900">SIMULADOR</a>
+                <a href="#blog" class="hover:text-blue-900">CONSEJOS</a>
+                <a href="https://wa.me/56922721" target="_blank" class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-black transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> MATRÍCULAS
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-gradient h-[650px] flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-4 w-full grid lg:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 bg-yellow-400 text-black font-black px-4 py-1 rounded-sm skew-x-[-12deg] text-sm uppercase">
+                    Inscripciones Abiertas 2024
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-black leading-[0.9] italic">Maneja tu destino, <br><span class="text-yellow-400 underline decoration-white decoration-4 underline-offset-8">conducimos contigo.</span></h1>
+                <p class="text-lg text-gray-300 max-w-md font-medium">Formación profesional en citycars Clase B. Aprueba a la primera con nuestro sistema de acompañamiento y software exclusivo.</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#planes" class="bg-white text-blue-900 font-black px-8 py-4 rounded-sm hover:bg-yellow-400 transition uppercase tracking-widest text-sm">Ver Planes Clase B</a>
+                    <a href="#software" class="border-2 border-white/30 backdrop-blur-sm px-8 py-4 rounded-sm font-black hover:bg-white hover:text-blue-900 transition uppercase tracking-widest text-sm">Probar Simulador</a>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-end items-center">
+                <div class="bg-white/10 backdrop-blur-xl p-8 border border-white/20 rounded-2xl w-80 rotate-3 shadow-2xl">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i><i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="italic font-bold text-lg">"Excelente escuela, los citycars son súper cómodos para aprender a estacionar. Aprobé a la primera!"</p>
+                    <div class="mt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center text-blue-900 font-bold">JD</div>
+                        <span class="font-black text-sm">Juan Delgado - Alumno</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="planes" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black text-blue-900 italic tracking-tighter uppercase">Planes Clase B 2024</h2>
+            <div class="h-1.5 w-24 bg-yellow-400 mx-auto mt-4"></div>
+            <p class="mt-4 text-gray-500 font-bold">Selecciona tu nivel y reserva tu cupo por WhatsApp</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white border-2 border-gray-100 p-8 flex flex-col hover:border-blue-900 transition-all group relative overflow-hidden">
+                <div class="checker-bg h-2 w-full absolute top-0 left-0"></div>
+                <h3 class="text-2xl font-black text-blue-900 uppercase italic">Curso Básico</h3>
+                <p class="text-gray-400 text-xs font-bold mt-1">Ideal si ya sabes un poco</p>
+                <div class="my-8">
+                    <span class="text-4xl font-black">$125.000</span>
+                </div>
+                <ul class="space-y-4 text-sm font-bold text-gray-600 mb-10 flex-grow">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 6 Clases Prácticas (Citycar)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Clases Teóricas Online</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Examen Psicotécnico</li>
+                    <li class="flex items-center gap-2 text-gray-300"><i class="fa-solid fa-xmark"></i> Préstamo de auto p/ municipal</li>
+                </ul>
+                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20matricularme%20en%20el%20Curso%20Básico%20($125.000)" target="_blank" class="w-full bg-blue-900 text-white py-4 font-black uppercase text-xs tracking-widest text-center group-hover:bg-green-500 transition-colors">Comprar vía WhatsApp</a>
+            </div>
+
+            <div class="bg-blue-900 p-8 flex flex-col text-white shadow-2xl scale-105 relative overflow-hidden">
+                <div class="bg-yellow-400 text-blue-900 font-black px-4 py-1 absolute top-4 right-[-35px] rotate-45 w-40 text-center text-[10px] uppercase">Más Popular</div>
+                <h3 class="text-2xl font-black uppercase italic">Plan Full Futuro</h3>
+                <p class="text-blue-300 text-xs font-bold mt-1">Desde cero hasta la licencia</p>
+                <div class="my-8">
+                    <span class="text-4xl font-black">$155.000</span>
+                </div>
+                <ul class="space-y-4 text-sm font-bold text-blue-100 mb-10 flex-grow">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> 12 Clases Prácticas (Citycar)</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Clases Teóricas Ilimitadas</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Examen Psicotécnico</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Préstamo de auto p/ municipal</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-yellow-400"></i> Software de ensayo Premium</li>
+                </ul>
+                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20matricularme%20en%20el%20Plan%20Full%20Futuro%20($155.000)" target="_blank" class="w-full bg-yellow-400 text-blue-900 py-4 font-black uppercase text-xs tracking-widest text-center hover:bg-white transition-colors">Comprar vía WhatsApp</a>
+            </div>
+
+            <div class="bg-white border-2 border-gray-100 p-8 flex flex-col hover:border-blue-900 transition-all group relative overflow-hidden">
+                <div class="checker-bg h-2 w-full absolute top-0 left-0"></div>
+                <h3 class="text-2xl font-black text-blue-900 uppercase italic">Reforzamiento</h3>
+                <p class="text-gray-400 text-xs font-bold mt-1">¿Ya tienes licencia pero no manejas?</p>
+                <div class="my-8">
+                    <span class="text-4xl font-black">$95.000</span>
+                </div>
+                <ul class="space-y-4 text-sm font-bold text-gray-600 mb-10 flex-grow">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 4 Clases de manejo fluido</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Tips de estacionamiento pro</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Manejo en autopistas</li>
+                </ul>
+                <a href="https://wa.me/56922721?text=Hola!%20Quiero%20comprar%20el%20Plan%20de%20Reforzamiento%20($95.000)" target="_blank" class="w-full bg-blue-900 text-white py-4 font-black uppercase text-xs tracking-widest text-center group-hover:bg-green-500 transition-colors">Comprar vía WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="software" class="bg-black py-24 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-blue-600/20 blur-[100px]"></div>
+                <h2 class="text-5xl font-black italic uppercase leading-none">Asegura tu <br><span class="text-blue-500 italic font-black">Aprobación.</span></h2>
+                <p class="mt-6 text-gray-400 font-medium text-lg">Todos nuestros alumnos tienen acceso gratuito a nuestro **Simulador Oficial de Examen Clase B**. Entrena con preguntas reales de la municipalidad.</p>
+                
+                <div class="mt-10 space-y-4">
+                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-black">01</div>
+                        <span class="font-bold">Preguntas actualizadas 2024</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/10">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center font-black">02</div>
+                        <span class="font-bold">Corrección automática e inmediata</span>
+                    </div>
+                </div>
+
+                <div class="mt-10">
+                    <a href="https://kulhunter.github.io/examen_claseB/" target="_blank" class="bg-blue-600 text-white px-10 py-5 rounded-sm font-black uppercase tracking-tighter hover:bg-white hover:text-black transition-all inline-block">Probar Software Ahora</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="bg-gray-800 w-full max-w-sm rounded-3xl border-8 border-gray-700 overflow-hidden shadow-2xl">
+                    <div class="bg-white p-6 min-h-[400px] text-black">
+                        <div class="h-2 w-full bg-gray-100 mb-4"></div>
+                        <div class="h-2 w-3/4 bg-gray-100 mb-8"></div>
+                        <div class="space-y-4">
+                            <div class="p-4 border-2 border-blue-600 rounded-lg font-bold text-sm">Opción A: Detenerse totalmente</div>
+                            <div class="p-4 border-2 border-gray-100 rounded-lg font-bold text-sm">Opción B: Seguir a 20km/h</div>
+                            <div class="p-4 border-2 border-gray-100 rounded-lg font-bold text-sm">Opción C: Tocar la bocina</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white py-20 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="text-2xl font-black text-blue-900 uppercase italic">Escuela Futuro</div>
+                <p class="mt-4 text-gray-500 max-w-xs font-bold">Expertos en citycars y formación de nuevos conductores en Chile. Tu futuro al volante comienza hoy.</p>
+            </div>
+            <div>
+                <h4 class="font-black uppercase text-sm mb-6">Navegación</h4>
+                <ul class="space-y-4 text-gray-400 font-bold text-sm">
+                    <li><a href="#planes" class="hover:text-blue-900">Planes de Manejo</a></li>
+                    <li><a href="#software" class="hover:text-blue-900">Simulador Online</a></li>
+                    <li><a href="#blog" class="hover:text-blue-900">Consejos Viales</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black uppercase text-sm mb-6">Ubicación</h4>
+                <p class="text-gray-400 font-bold text-sm">Atención presencial y clases en todo el sector. <br><br> WhatsApp: +56 9 2272 1XXX</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-20 pt-8 border-t border-gray-50 text-center text-xs font-bold text-gray-300">
+            © 2024 ESCUELA DE CONDUCTORES FUTURO. DISEÑADO PARA EL ÉXITO VIAL.
+        </div>
+    </footer>
+
+</body>
+</html>

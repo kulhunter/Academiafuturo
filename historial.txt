@@ -1,0 +1,19 @@
+HISTORIAL DE CAMBIOS - PROYECTO ESCUELA FUTURO
+---------------------------------------------
+
+1. Migración de HTML estático a Next.js (App Router).
+2. Configuración de despliegue automatizado a GitHub Pages.
+3. Diseño de LogoFuturo.tsx (SVG paramétrico) basado en el tríptico real.
+4. Creación de Pitch Deck interactivo (/pitch) estilo Prolam Y&R.
+5. Sincronización de Sedes, Teléfonos y Horarios reales (Macul y Peñalolén).
+6. Implementación de Checkout Modal con redirección a WhatsApp.
+7. Creación de 11 artículos de Blog optimizados para SEO local con imágenes de alta calidad.
+8. ACTUALIZACIÓN DE PRECIOS:
+   - Curso Clase B: $170.000.
+   - Curso Intensivo: $250.000 (Fin de semana).
+   - Curso Profesional: $290.000 (A2, A3, A4).
+9. SIMULADOR INTEGRADO: Se reemplazó la app externa por un Simulador de 5 Preguntas Críticas (ShortTest.tsx) directamente en el Home.
+10. TESTIMONIOS REALES: Integración de menciones 5 estrellas reales extraídas de Google Maps (Francisco Carrasco, Raisa Diaz, etc.).
+11. FIX INSTAGRAM: Actualización de imágenes en el feed con contenido real-looking y foto proporcionada por el usuario.
+12. FIX PITCH DECK: Corrección de enlaces de imágenes rotos en la presentación de ventas.
+13. DOCUMENTACIÓN: Creación de historial.txt para registro de hitos del proyecto.

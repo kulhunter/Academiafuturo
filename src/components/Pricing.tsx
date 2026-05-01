@@ -50,16 +50,16 @@ export default function Pricing() {
                         <div className="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
                             <div className="p-10">
                                 <h3 className="text-2xl font-black text-slate-900 uppercase italic">Curso Intensivo</h3>
-                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">Mismo programa integral, diseñado exclusivamente para Sábados y Domingos.</p>
-                                <div className="text-5xl font-black my-8 text-slate-900">$170.000</div>
+                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">Programa diseñado exclusivamente para quienes solo disponen de fines de semana.</p>
+                                <div className="text-5xl font-black my-8 text-slate-900">$250.000</div>
                                 <ul className="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-calendar-days text-blue-500 mt-1 text-lg"></i> <span>Horario de Fin de Semana</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Mismo contenido que el semanal</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-calendar-days text-blue-500 mt-1 text-lg"></i> <span>Clases Sábados y Domingos</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Mismo programa pedagógico</span></li>
                                 </ul>
                             </div>
                             <div className="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
-                                <button onClick={() => openCheckout('Curso Intensivo', '$170.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
-                                    Consultar Disponibilidad
+                                <button onClick={() => openCheckout('Curso Intensivo', '$250.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                                    Consultar Cupos
                                 </button>
                             </div>
                         </div>
@@ -97,15 +97,15 @@ export default function Pricing() {
                             <div className="p-10">
                                 <h3 className="text-2xl font-black text-slate-900 uppercase italic">Profesional</h3>
                                 <p className="text-slate-500 text-sm font-bold mt-3 h-12">Licencias para transporte de personas y carga pesada.</p>
-                                <div className="text-4xl font-black my-8 text-slate-900 italic">A2 - A3 - A4</div>
+                                <div className="text-5xl font-black my-8 text-slate-900 italic">$290.000</div>
                                 <ul className="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-truck-moving text-slate-400 mt-1 text-lg"></i> <span>Cursos especializados por clase</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-truck-moving text-slate-400 mt-1 text-lg"></i> <span>Clases A2, A3, A4</span></li>
                                     <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Legislación profesional incluida</span></li>
                                 </ul>
                             </div>
                             <div className="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
-                                <button onClick={() => openCheckout('Curso Profesional (A2/A3/A4)', 'Consultar Valor')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
-                                    Consultar Valores
+                                <button onClick={() => openCheckout('Curso Profesional', '$290.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                                    Ver Requisitos
                                 </button>
                             </div>
                         </div>

@@ -1,8 +1,8 @@
 export default function InstagramFeed() {
   const images = [
-    "/images/hero-image.jpg",
-    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=600&h=600",
+    "https://instagram.fscl9-1.fna.fbcdn.net/v/t51.82787-15/622657250_18079451723010387_6531971613768587850_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzAxMTQ2MzI2ODAwNzY3MDY4OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjcyMHg3MjAuc2RyLkMzIn0%3D&_nc_ohc=Ip2G9l73oN0Q7kNvwGDCqM4&_nc_oc=Adr7kKpV85KHxHbCG1YRmvcla_dv_MmBcAzQTtQKQLKR2ybJt_R",
     "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=600&h=600",
+    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=600&h=600",
     "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=600&h=600"
   ];
 

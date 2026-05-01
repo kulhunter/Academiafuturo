@@ -54,7 +54,7 @@ export default function PitchDeck() {
             </p>
           </div>
           <div className="h-[60vh] rounded-3xl overflow-hidden shadow-2xl relative">
-            <img src="https://images.unsplash.com/photo-1516224498413-84ecf3a1e7fc?q=80&w=1280" alt="Instructor paciente" className="w-full h-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1280" alt="Instructor paciente" className="w-full h-full object-cover" />
           </div>
         </div>
       </section>

@@ -1,25 +1,25 @@
 export default function Reviews() {
   const reviews = [
     {
-      author: "Juan P.",
-      date: "Hace 1 semana",
-      text: "Excelente escuela, los profesores tienen mucha paciencia para enseñar, especialmente si tienes miedo al principio. Recomendado 100% para los vecinos de Macul.",
+      author: "Francisco Carrasco",
+      date: "Hace 1 año",
+      text: "Una escuela fantástica sinceramente, nada que reprochar, te ayudan y te dan la confianza para poder sacar tu licencia y aprobarla incluso a la primera. El curso se disfruta mucho porque son todos muy simpáticos.",
       rating: 5,
-      avatar: "JP"
+      avatar: "FC"
     },
     {
-      author: "Ana S.",
-      date: "Hace 2 semanas",
-      text: "Me gustó mucho la flexibilidad de horario y la atención en la sede Peñalolén. Pasé mi examen a la primera gracias a los tips de los profes y el simulador de la web.",
+      author: "Raisa Diaz",
+      date: "Hace 1 año",
+      text: "Excelente experiencia! Los instructores son muy claros en sus explicaciones y amorosos 😊 Muchas gracias Osvaldo, Alejandro, Gabriel y Angel, son los mejores! Pase mi examen a la primera y sin errores.",
       rating: 5,
-      avatar: "AS"
+      avatar: "RD"
     },
     {
-      author: "Carlos R.",
-      date: "Hace 1 mes",
-      text: "Sede Macul muy buena, el instructor fue muy paciente y me dio confianza. Me sirvió mucho practicar en el auto de la escuela para el examen municipal.",
+      author: "Olga Millacura Ramirez",
+      date: "Hace 4 años",
+      text: "Hice mi curso en Egaña, profesores al 100% una paciencia única, muy buenos todos, siempre están preguntando si entendiste. Aprobé mis exámenes en la municipalidad sin problemas.",
       rating: 5,
-      avatar: "CR"
+      avatar: "OM"
     }
   ];
 

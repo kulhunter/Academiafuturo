@@ -4,6 +4,7 @@ import Sedes from '@/components/Sedes'
 import Pricing from '@/components/Pricing'
 import Reviews from '@/components/Reviews'
 import InstagramFeed from '@/components/InstagramFeed'
+import ShortTest from '@/components/ShortTest'
 import Footer from '@/components/Footer'
 
 export const metadata = {
@@ -61,12 +62,11 @@ export default function Home() {
                     El examen teórico municipal aterra a muchos postulantes. Equivócate aquí en tu casa, todas las veces que quieras. Te cuidamos hasta que estés listo.
                 </p>
                 
-                <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white h-[600px]">
-                    <iframe 
-                        src="https://kulhunter.github.io/examen_claseB/" 
-                        className="w-full h-full border-none"
-                        title="Simulador Examen Municipal Clase B"
-                    ></iframe>
+                <div className="max-w-3xl mx-auto">
+                    <ShortTest />
+                    <p className="mt-8 text-center text-slate-500 font-bold text-sm">
+                        <i className="fa-solid fa-shield-halved mr-2"></i> Herramienta gratuita para alumnos de Macul y Peñalolén.
+                    </p>
                 </div>
             </div>
         </section>

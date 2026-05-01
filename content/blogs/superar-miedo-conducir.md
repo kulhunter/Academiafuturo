@@ -1,26 +1,28 @@
 ---
 title: "Cómo superar el miedo a conducir: Guía para el examen municipal"
 date: "2026-04-30"
-imageUrl: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=1200"
+coverImage: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1200"
 ---
 
 El miedo a conducir (amaxofobia) es más común de lo que crees. Muchos de nuestros alumnos en las sedes de Macul y Peñalolén llegan con la misma inquietud: *¿Qué pasa si me equivoco en el examen?*
 
-En **Escuela de Conductores Futuro**, entendemos que el aprendizaje no se trata solo de mover el volante y pisar pedales, sino de **construir confianza**.
+En la **Escuela de Conductores Futuro**, entendemos que el aprendizaje no es solo técnico, sino también emocional. Por eso, hemos diseñado una metodología basada en la paciencia y el acompañamiento constante.
 
-## 1. Elige una Escuela con Paciencia
+## ¿Por qué sentimos miedo?
 
-A diferencia de las grandes cadenas donde eres un número más, el enfoque principal debe ser el acompañamiento. Si el instructor te grita o te apura, tu cerebro asocia la conducción con peligro. Nuestros profesores están entrenados específicamente para enseñar desde la empatía.
+El miedo es una respuesta natural ante lo desconocido. En el caso del examen municipal, el temor suele venir de:
+- La presión de ser evaluado por un examinador.
+- El tráfico real en avenidas como Macul o Egaña.
+- La posibilidad de que el auto se apague en plena intersección.
 
-## 2. Conoce el Circuito Municipal
+## Consejos para dominar los nervios
 
-La ansiedad disminuye cuando sabes a qué te enfrentas.
-*   **En Macul:** El circuito suele incluir calles de tránsito medio. Aprenderás a dominar las rotondas y los ceda el paso con tranquilidad.
-*   **En Peñalolén:** Las subidas pueden asustar, pero te enseñamos la técnica perfecta de control de embrague para que el auto jamás se te vaya hacia atrás.
+1. **Práctica constante:** No hay mejor remedio que la repetición. En nuestras clases individuales, te enfrentas gradualmente a situaciones de tráfico real.
+2. **Conoce el circuito:** Practicar en las mismas calles donde se rinde el examen te da una ventaja psicológica enorme.
+3. **Usa el simulador:** Nuestra herramienta de examen corto en la web te permite equivocarte sin riesgos, ayudándote a mecanizar las respuestas teóricas.
 
-## 3. Ensaya en Casa
+## La paciencia del instructor
 
-Por eso ofrecemos acceso exclusivo a nuestro **Simulador del Examen Teórico**. Puedes equivocarte todas las veces que quieras en la comodidad de tu living, para que el día de la prueba en la municipalidad, las preguntas te parezcan familiares.
+Nuestro equipo está entrenado para enseñar con respeto. Sabemos que cada alumno tiene su ritmo. Si se te apaga el motor, respiramos hondo y volvemos a empezar. El error es parte del aprendizaje.
 
-> **¿Listo para dar el paso?**
-> Conoce nuestros [Planes de Conducción](/#planes) y déjanos ayudarte a obtener tu Licencia Clase B sin estrés.
+¡Te esperamos en nuestras sedes para que juntos logremos tu licencia!

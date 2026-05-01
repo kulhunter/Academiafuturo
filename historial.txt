@@ -17,3 +17,4 @@ HISTORIAL DE CAMBIOS - PROYECTO ESCUELA FUTURO
 11. FIX INSTAGRAM: Actualización de imágenes en el feed con contenido real-looking y foto proporcionada por el usuario.
 12. FIX PITCH DECK: Corrección de enlaces de imágenes rotos en la presentación de ventas.
 13. DOCUMENTACIÓN: Creación de historial.txt para registro de hitos del proyecto.
+2026-05-01: Rediseño de Instagram, corrección de imágenes de blog y solución de enlaces con basePath.

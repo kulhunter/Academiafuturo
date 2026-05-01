@@ -18,9 +18,12 @@ export default function Sedes() {
                         <h3 className="text-2xl font-black text-slate-900 mb-4">Av. Macul 4186</h3>
                         <ul className="space-y-3 font-bold text-slate-600 mb-6 text-sm">
                             <li><i className="fa-solid fa-location-dot text-slate-400 w-5"></i> Comuna: Macul, Región Metropolitana</li>
-                            <li><i className="fa-solid fa-phone text-slate-400 w-5"></i> Teléfono: (2) 2221 4190</li>
-                            <li><i className="fa-regular fa-clock text-slate-400 w-5"></i> Horario: Lunes a Viernes 09:00 a 19:00 hrs</li>
+                            <li><i className="fa-solid fa-phone text-slate-400 w-5"></i> Teléfono: 2 2222 14190</li>
+                            <li><i className="fa-regular fa-clock text-slate-400 w-5"></i> Horario: Lunes a Viernes 09:40 a 13:00 hrs y 15:00 a 20:20 hrs</li>
                         </ul>
+                        <a href="https://wa.me/56942051897?text=Hola%20Sede%20Macul,%20quisiera%20pedir%20información%20sobre%20el%20curso%20de%20conducción." target="_blank" className="bg-green-500 text-white font-black text-center py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-600 transition">
+                            <i className="fa-brands fa-whatsapp text-xl"></i> Contactar Sede Macul
+                        </a>
                     </div>
                 </div>
 
@@ -33,9 +36,12 @@ export default function Sedes() {
                         <h3 className="text-2xl font-black text-slate-900 mb-4">Av. Egaña 1834</h3>
                         <ul className="space-y-3 font-bold text-slate-600 mb-6 text-sm">
                             <li><i className="fa-solid fa-location-dot text-slate-400 w-5"></i> Comuna: Peñalolén, Región Metropolitana</li>
-                            <li><i className="fa-solid fa-phone text-slate-400 w-5"></i> Teléfono: (2) 2272 1648</li>
-                            <li><i className="fa-regular fa-clock text-slate-400 w-5"></i> Horario: Lunes a Viernes 09:00 a 19:00 hrs</li>
+                            <li><i className="fa-solid fa-phone text-slate-400 w-5"></i> Teléfono: 2 3305 0774 / 2 3345 8775</li>
+                            <li><i className="fa-regular fa-clock text-slate-400 w-5"></i> Horario: Lunes a Viernes 09:40 a 13:00 hrs y 15:00 a 20:20 hrs</li>
                         </ul>
+                        <a href="https://wa.me/56942051897?text=Hola%20Sede%20Peñalolén,%20quisiera%20pedir%20información%20sobre%20el%20curso%20de%20conducción." target="_blank" className="bg-green-500 text-white font-black text-center py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-green-600 transition">
+                            <i className="fa-brands fa-whatsapp text-xl"></i> Contactar Sede Peñalolén
+                        </a>
                     </div>
                 </div>
             </div>

@@ -23,8 +23,8 @@ export default function Pricing() {
 
     const processCheckout = (e: React.FormEvent) => {
         e.preventDefault();
-        const message = `¡Hola Escuela Futuro! 🚗💨%0A%0AVengo desde la página web y quiero gestionar mi matrícula.%0A%0A*DATOS DEL ALUMNO:*%0A👤 Nombre: ${formData.name}%0A📱 Teléfono: ${formData.phone}%0A📍 Sede elegida: ${formData.sede}%0A%0A*DETALLE DE COMPRA:*%0A📌 Plan: ${selectedPlan.name}%0A💰 Valor: ${selectedPlan.price}%0A%0A¿Me pueden ayudar con los métodos de pago para asegurar mi cupo?`;
-        const whatsappNumber = "56900000000"; 
+        const message = `¡Hola Escuela Futuro! 🚗💨%0A%0AVengo desde la página web y quiero gestionar mi matrícula.%0A%0A*DATOS DEL ALUMNO:*%0A👤 Nombre: ${formData.name}%0A📱 Teléfono: ${formData.phone}%0A📍 Sede elegida: ${formData.sede}%0A%0A*DETALLE DE INTERÉS:*%0A📌 Plan: ${selectedPlan.name}%0A💰 Valor: ${selectedPlan.price}%0A%0A¿Me pueden ayudar con los pasos a seguir para mi inscripción?`;
+        const whatsappNumber = "56942051897"; 
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
         closeCheckout();
         setFormData({ name: '', phone: '', sede: '' });
@@ -49,65 +49,63 @@ export default function Pricing() {
                         
                         <div className="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
                             <div className="p-10">
-                                <h3 className="text-2xl font-black text-slate-900 uppercase italic">Reforzamiento</h3>
-                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">Si ya tienes licencia pero necesitas recuperar la confianza al volante.</p>
-                                <div className="text-5xl font-black my-8 text-slate-900">$115.000</div>
+                                <h3 className="text-2xl font-black text-slate-900 uppercase italic">Curso Intensivo</h3>
+                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">Mismo programa integral, diseñado exclusivamente para Sábados y Domingos.</p>
+                                <div className="text-5xl font-black my-8 text-slate-900">$170.000</div>
                                 <ul className="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>4 Clases Prácticas Citycar</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Profesores pacientes y dedicados</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-calendar-days text-blue-500 mt-1 text-lg"></i> <span>Horario de Fin de Semana</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Mismo contenido que el semanal</span></li>
                                 </ul>
                             </div>
                             <div className="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
-                                <button onClick={() => openCheckout('Plan Reforzamiento', '$115.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
-                                    Seleccionar Plan
+                                <button onClick={() => openCheckout('Curso Intensivo', '$170.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                                    Consultar Disponibilidad
                                 </button>
                             </div>
                         </div>
 
                         <div className="bg-slate-900 rounded-3xl shadow-2xl overflow-hidden flex flex-col relative border-4 border-yellow-400 transform lg:-translate-y-8 z-20">
                             <div className="bg-yellow-400 text-slate-900 text-center font-black text-xs py-3 uppercase tracking-widest flex justify-center items-center gap-2">
-                                <i className="fa-solid fa-star"></i> Plan Recomendado - Licencia Segura <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i> Programa Completo (Tríptico) <i className="fa-solid fa-star"></i>
                             </div>
                             <div className="p-10 text-white">
-                                <h3 className="text-4xl font-black uppercase italic">Plan Completo</h3>
-                                <p className="text-slate-300 text-sm font-bold mt-3 h-12">Formación total desde cero. Te acompañamos hasta que apruebes en tu Municipalidad.</p>
+                                <h3 className="text-4xl font-black uppercase italic">Clase B</h3>
+                                <p className="text-slate-300 text-sm font-bold mt-3 h-12">Curso de 25 días. Formación integral teórica y práctica individual.</p>
                                 
                                 <div className="mt-8 flex flex-col">
-                                    <span className="line-through text-slate-500 font-bold text-xl decoration-2 decoration-red-500">$212.500</span>
                                     <div className="flex items-end gap-3 mt-1">
                                         <span className="text-6xl font-black text-yellow-400">$170.000</span>
+                                        <span className="text-slate-400 font-bold mb-2">Contado</span>
                                     </div>
-                                    <span className="inline-block bg-red-500 text-white text-xs font-black px-3 py-1.5 rounded-md mt-3 w-max uppercase tracking-wider">20% OFF en Web</span>
                                 </div>
 
                                 <ul className="space-y-5 text-sm font-bold text-slate-200 mb-10 mt-10 border-t border-slate-700 pt-8">
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>12 Clases Prácticas</strong> en Citycar</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span>Clases Teóricas Completas</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span>Preparación Test Psicotécnico</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>Auto Préstamo Municipal</strong></span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>3 días</strong> de Máquinas y Mecánica</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>8 días</strong> de Legislación y Psicología</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>14 clases</strong> de 45 min de manejo individual</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-circle-check text-yellow-400 mt-1 text-xl"></i> <span><strong>Auto de la escuela</strong> para examen municipal</span></li>
                                 </ul>
                             </div>
                             <div className="p-8 bg-slate-800 border-t border-slate-700 mt-auto">
-                                <button onClick={() => openCheckout('Plan Completo', '$170.000')} className="w-full text-center bg-yellow-400 text-slate-900 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(250,204,21,0.4)]">
-                                    Comprar Ahora
+                                <button onClick={() => openCheckout('Curso Clase B', '$170.000')} className="w-full text-center bg-yellow-400 text-slate-900 py-5 rounded-xl font-black uppercase tracking-widest text-sm hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(250,204,21,0.4)]">
+                                    Inscribirme Ahora
                                 </button>
                             </div>
                         </div>
 
                         <div className="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden flex flex-col hover:shadow-2xl transition-all duration-300">
                             <div className="p-10">
-                                <h3 className="text-2xl font-black text-slate-900 uppercase italic">Plan Básico</h3>
-                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">El estándar para quienes tienen nociones previas de conducción.</p>
-                                <div className="text-5xl font-black my-8 text-slate-900">$155.000</div>
+                                <h3 className="text-2xl font-black text-slate-900 uppercase italic">Profesional</h3>
+                                <p className="text-slate-500 text-sm font-bold mt-3 h-12">Licencias para transporte de personas y carga pesada.</p>
+                                <div className="text-4xl font-black my-8 text-slate-900 italic">A2 - A3 - A4</div>
                                 <ul className="space-y-4 text-sm font-bold text-slate-600 mb-10 border-t border-slate-100 pt-8">
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>8 Clases Prácticas (45 min)</span></li>
-                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Clases Teóricas Básicas</span></li>
-                                    <li className="flex items-start gap-3 opacity-40"><i className="fa-solid fa-xmark text-slate-400 mt-1 text-lg"></i> <span>Auto Municipal NO Incluido</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-truck-moving text-slate-400 mt-1 text-lg"></i> <span>Cursos especializados por clase</span></li>
+                                    <li className="flex items-start gap-3"><i className="fa-solid fa-check text-green-500 mt-1 text-lg"></i> <span>Legislación profesional incluida</span></li>
                                 </ul>
                             </div>
                             <div className="p-8 bg-slate-50 border-t border-slate-100 mt-auto">
-                                <button onClick={() => openCheckout('Plan Básico', '$155.000')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
-                                    Seleccionar Plan
+                                <button onClick={() => openCheckout('Curso Profesional (A2/A3/A4)', 'Consultar Valor')} className="w-full text-center font-black uppercase tracking-widest text-sm text-slate-700 bg-white border-2 border-slate-200 py-4 rounded-xl hover:border-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300">
+                                    Consultar Valores
                                 </button>
                             </div>
                         </div>

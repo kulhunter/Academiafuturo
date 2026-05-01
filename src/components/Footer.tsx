@@ -13,8 +13,9 @@ export default function Footer() {
             <div>
                 <h4 className="text-white font-black uppercase tracking-widest mb-6">Red de Sedes</h4>
                 <ul className="space-y-4 text-sm font-bold">
-                    <li><i className="fa-solid fa-location-dot text-yellow-400 w-5"></i> <strong>Macul:</strong> Av. Macul 4186 (Tel: 22214190)</li>
-                    <li><i className="fa-solid fa-location-dot text-yellow-400 w-5"></i> <strong>Peñalolén:</strong> Av. Egaña 1834 (Tel: 22721648)</li>
+                    <li><i className="fa-solid fa-location-dot text-yellow-400 w-5"></i> <strong>Sede Macul:</strong> Av. Macul 4186 (Tel: 222214190)</li>
+                    <li><i className="fa-solid fa-location-dot text-yellow-400 w-5"></i> <strong>Sede Peñalolén:</strong> Av. Egaña 1834 (Tel: 233050774 / 233458775)</li>
+                    <li><i className="fa-solid fa-mobile-screen-button text-yellow-400 w-5"></i> <strong>WhatsApp:</strong> +56 9 4205 1897</li>
                 </ul>
             </div>
             <div>
@@ -27,8 +28,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-600">
-            <div>&copy; {new Date().getFullYear()} Escuela de Conductores Futuro. Todos los derechos reservados.</div>
-            <a href="/admin" className="hover:text-slate-400 transition">Portal Administrativo</a>
+            <div>&copy; {new Date().getFullYear()} Escuela de Conductores Futuro. Experiencia, Seriedad y Responsabilidad.</div>
         </div>
     </footer>
   )

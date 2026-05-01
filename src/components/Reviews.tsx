@@ -1,25 +1,25 @@
 export default function Reviews() {
   const reviews = [
     {
-      author: "Carlos P.",
+      author: "Juan P.",
       date: "Hace 1 semana",
-      text: "Excelente escuela. Fui con mucho miedo porque había reprobado antes en otro lado. El profesor fue súper paciente y el Citycar estaba nuevecito, muy fácil de estacionar. ¡Aprobé a la primera en Macul!",
+      text: "Excelente escuela, los profesores tienen mucha paciencia para enseñar, especialmente si tienes miedo al principio. Recomendado 100% para los vecinos de Macul.",
       rating: 5,
-      avatar: "CP"
+      avatar: "JP"
     },
     {
-      author: "Valentina M.",
+      author: "Ana S.",
       date: "Hace 2 semanas",
-      text: "Recomiendo el curso garantizado. Te preparan no solo para sacar la licencia, sino para manejar de verdad en Santiago. El test psicotécnico de práctica me salvó de los nervios.",
+      text: "Me gustó mucho la flexibilidad de horario y la atención en la sede Peñalolén. Pasé mi examen a la primera gracias a los tips de los profes y el simulador de la web.",
       rating: 5,
-      avatar: "VM"
+      avatar: "AS"
     },
     {
-      author: "Ignacio R.",
+      author: "Carlos R.",
       date: "Hace 1 mes",
-      text: "La sede Peñalolén un 7. Me pasaron el auto para rendir el examen práctico y los profes te enseñan todos los tips del circuito municipal. Vale cada peso.",
+      text: "Sede Macul muy buena, el instructor fue muy paciente y me dio confianza. Me sirvió mucho practicar en el auto de la escuela para el examen municipal.",
       rating: 5,
-      avatar: "IR"
+      avatar: "CR"
     }
   ];
 

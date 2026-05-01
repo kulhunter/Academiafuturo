@@ -22,7 +22,7 @@ export default function PitchDeck() {
             <LogoFuturo variant="white" layout="vertical" />
           </div>
           <div className="inline-block bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-black uppercase tracking-widest text-xs mb-8">
-            Estrategia Digital 2026
+            Estrategia Digital 2024
           </div>
           <h1 className="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none mb-6">
             Conducir es un<br/><span className="text-yellow-400">Acto de Confianza.</span>
@@ -91,60 +91,128 @@ export default function PitchDeck() {
         </div>
       </section>
 
-      {/* Slide 4: Solución */}
+      {/* Slide 4: El Proceso de Matrícula (Embudo de Empatía) */}
       <section className="h-screen w-full snap-start flex items-center p-8 bg-white text-slate-900 relative">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-          <div className="order-2 md:order-1 space-y-6">
-             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl flex-shrink-0"><i className="fa-solid fa-location-dot"></i></div>
-                <div>
-                  <h4 className="font-black uppercase text-lg">Cercanía Local</h4>
-                  <p className="text-slate-500 text-sm font-bold">Landings específicas para Peñalolén y Macul dominando Google Maps.</p>
-                </div>
-             </div>
-             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl flex-shrink-0"><i className="fa-brands fa-whatsapp"></i></div>
-                <div>
-                  <h4 className="font-black uppercase text-lg">Embudo de Empatía</h4>
-                  <p className="text-slate-500 text-sm font-bold">En vez de un frío &quot;Comprar&quot;, un flujo hacia WhatsApp para dar seguridad humana antes del pago.</p>
-                </div>
-             </div>
-             <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
-                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 text-xl flex-shrink-0"><i className="fa-solid fa-laptop-code"></i></div>
-                <div>
-                  <h4 className="font-black uppercase text-lg">Tecnología Anti-Estrés</h4>
-                  <p className="text-slate-500 text-sm font-bold">El simulador no es para cobrar más, es una herramienta terapéutica para equivocarse en casa y no en el municipio.</p>
-                </div>
-             </div>
-          </div>
-          <div className="order-1 md:order-2">
+          <div>
             <div className="inline-block bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-black uppercase tracking-widest text-xs mb-6">
-              La Nueva Web
+              El Proceso de Matrícula
             </div>
             <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none mb-8">
-              Una web que<br/><span className="text-yellow-500">da la bienvenida.</span>
+              Vender desde la<br/><span className="text-yellow-500">Empatía.</span>
             </h2>
+            <p className="text-xl font-bold text-slate-600 mb-6">
+              Las páginas web antiguas obligan al usuario a &quot;Comprar&quot; fríamente. Nosotros crearemos un <strong>Embudo de Contacto</strong>.
+            </p>
             <p className="text-xl font-bold text-slate-600">
-              Transformamos la página en la mejor recepcionista: Clara, moderna, amigable y extremadamente rápida, construida con la tecnología que usan las empresas líderes (Next.js & GitHub Pages).
+              Cuando el alumno elija su plan, la web le pedirá sus datos básicos para asignarle el instructor con más paciencia. De ahí, la web envía esos datos directo a su WhatsApp.
+            </p>
+          </div>
+          <div className="bg-[#fff8f1] p-8 rounded-3xl border-2 border-dashed border-yellow-400">
+            <h3 className="text-2xl font-black mb-4">Ejemplo de mensaje automático:</h3>
+            <p className="text-lg text-slate-600 italic font-medium mb-6">
+              &quot;¡Hola Escuela Futuro! Me llamo Camila, quiero tomar el Plan Completo en la Sede Macul. Me da un poco de miedo el tráfico, ¿me pueden orientar?&quot;
+            </p>
+            <div className="flex items-center gap-2 text-green-600 font-black text-xl justify-end">
+              <i className="fa-brands fa-whatsapp"></i> Llega directo a su celular.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Slide 5: Tecnología Anti-Estrés */}
+      <section className="h-screen w-full snap-start flex items-center p-8 bg-slate-900 text-white relative">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div className="bg-slate-800 p-10 rounded-3xl border border-slate-700">
+            <i className="fa-solid fa-laptop-code text-5xl text-yellow-400 mb-6"></i>
+            <h3 className="text-3xl font-black uppercase italic mb-4 text-white">Plataforma de Ensayo Privada</h3>
+            <p className="text-slate-400 font-bold text-lg">
+              Simulador oficial con preguntas de la Conaset y corrección en tiempo real, exclusivo para alumnos de la academia.
+            </p>
+          </div>
+          <div>
+            <div className="inline-block bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-black uppercase tracking-widest text-xs mb-6">
+              El Valor Agregado
+            </div>
+            <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none mb-8">
+              Tecnología para la<br/><span className="text-yellow-400">Tranquilidad.</span>
+            </h2>
+            <p className="text-xl font-bold text-slate-400 mb-6">
+              El software no es un gasto, es una <strong>herramienta terapéutica</strong>. El examen teórico municipal aterra a los postulantes.
+            </p>
+            <p className="text-xl font-bold text-slate-400">
+              Ustedes le dicen al alumno: &quot;Equivócate aquí en tu casa, todas las veces que quieras. Nosotros te cuidamos hasta que estés listo&quot;.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Slide 5: Cierre */}
-      <section className="h-screen w-full snap-start flex flex-col justify-center items-center relative p-8 bg-slate-900 text-center">
-        <div className="max-w-3xl mx-auto">
-          <LogoFuturo variant="white" layout="icon" className="mb-8 scale-150" />
-          <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none mb-8 text-white">
-            Hagamos que las<br/><span className="text-yellow-400">cosas pasen.</span>
-          </h2>
-          <p className="text-xl font-bold text-slate-400 mb-12">
-            Una inversión enfocada en transformar cada visitante asustado en un alumno seguro y un promotor de por vida de la Escuela Futuro.
-          </p>
+      {/* Slide 6: Inversión */}
+      <section className="h-screen w-full snap-start flex items-center p-8 bg-yellow-400 text-slate-900 relative">
+        <div className="max-w-4xl mx-auto w-full">
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-7xl font-black uppercase italic tracking-tighter leading-none">
+              Hagamos que las<br/>cosas pasen.
+            </h2>
+          </div>
           
-          <a href="/" className="inline-block bg-yellow-400 text-slate-900 px-10 py-5 rounded-full font-black uppercase tracking-widest text-sm hover:bg-white transition-all transform hover:scale-105 shadow-2xl shadow-yellow-400/20">
-            Ver el Sitio Web Terminado
-          </a>
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-slate-900/10">
+            <table className="w-full text-left border-collapse">
+              <thead className="bg-slate-900 text-white">
+                <tr>
+                  <th className="p-6 text-xl font-black uppercase">Concepto de Inversión</th>
+                  <th className="p-6 text-xl font-black uppercase text-right">Valor</th>
+                </tr>
+              </thead>
+              <tbody className="font-bold text-slate-600">
+                <tr className="border-b border-slate-100">
+                  <td className="p-6"><strong>Sitio Web Integral:</strong> Diseño empático, Embudo a WhatsApp, Mapas de Sedes y 10 Artículos de Educación Vial.</td>
+                  <td className="p-6 text-right text-slate-900 text-xl">3 UF</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="p-6"><strong>Plataforma Anti-Estrés:</strong> Implementación del Software privado de simulacro de Examen Clase B.</td>
+                  <td className="p-6 text-right text-slate-900 text-xl">5 UF</td>
+                </tr>
+                <tr className="bg-slate-50 text-slate-900">
+                  <td className="p-6 text-xl font-black uppercase">Inversión Total Proyecto 2024</td>
+                  <td className="p-6 text-right text-3xl font-black">8 UF</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-8 text-center text-sm font-black uppercase tracking-widest opacity-60 italic">
+            Con la captura de tan solo 1 o 2 alumnos, el proyecto queda 100% pagado.
+          </p>
+        </div>
+      </section>
+
+      {/* Slide 7: Cierre Final */}
+      <section className="h-screen w-full snap-start flex flex-col justify-center items-center relative p-8 bg-slate-900 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl md:text-8xl font-black uppercase italic tracking-tighter leading-none mb-12 text-white">
+            ¡GRACIAS!
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <a href="/" className="bg-slate-800 text-white p-6 rounded-2xl border border-slate-700 hover:border-yellow-400 transition-all font-black uppercase tracking-widest text-xs flex flex-col items-center gap-4">
+              <i className="fa-solid fa-globe text-3xl text-yellow-400"></i>
+              Ver la Web
+            </a>
+            <a href="https://wa.me/56942051897" target="_blank" className="bg-slate-800 text-white p-6 rounded-2xl border border-slate-700 hover:border-yellow-400 transition-all font-black uppercase tracking-widest text-xs flex flex-col items-center gap-4">
+              <i className="fa-brands fa-whatsapp text-3xl text-yellow-400"></i>
+              Ver la App
+            </a>
+            <a href="/blog" className="bg-slate-800 text-white p-6 rounded-2xl border border-slate-700 hover:border-yellow-400 transition-all font-black uppercase tracking-widest text-xs flex flex-col items-center gap-4">
+              <i className="fa-solid fa-book-open text-3xl text-yellow-400"></i>
+              Ver el Blog
+            </a>
+          </div>
+
+          <div className="mt-12 opacity-50 flex flex-col items-center">
+             <span className="font-black uppercase tracking-widest text-sm mb-2">Un proyecto de</span>
+             <img src="https://dantagle.cl/wp-content/uploads/2023/06/Logo-Dantagle-Blanco.png" alt="Dantagle.cl" className="h-8 brightness-0 invert opacity-80" />
+             <span className="font-bold text-xs mt-2">dantagle.cl</span>
+          </div>
         </div>
       </section>
 

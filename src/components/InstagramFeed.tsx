@@ -4,10 +4,9 @@ import { useEffect } from 'react';
 
 export default function InstagramFeed() {
   useEffect(() => {
-    // @ts-ignore
-    if (window.instgrm) {
-      // @ts-ignore
-      window.instgrm.Embeds.process();
+    const instgrm = (window as any).instgrm;
+    if (instgrm) {
+      instgrm.Embeds.process();
     }
   }, []);
 
@@ -25,10 +24,9 @@ export default function InstagramFeed() {
         src="https://www.instagram.com/embed.js" 
         strategy="afterInteractive" 
         onLoad={() => {
-          // @ts-ignore
-          if (window.instgrm) {
-            // @ts-ignore
-            window.instgrm.Embeds.process();
+          const instgrm = (window as any).instgrm;
+          if (instgrm) {
+            instgrm.Embeds.process();
           }
         }}
       />

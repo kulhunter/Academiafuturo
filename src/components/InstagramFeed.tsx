@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 export default function InstagramFeed() {
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const instgrm = (window as any).instgrm;
     if (instgrm) {
       instgrm.Embeds.process();
@@ -24,6 +25,7 @@ export default function InstagramFeed() {
         src="https://www.instagram.com/embed.js" 
         strategy="afterInteractive" 
         onLoad={() => {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           const instgrm = (window as any).instgrm;
           if (instgrm) {
             instgrm.Embeds.process();

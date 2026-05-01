@@ -1,6 +1,6 @@
 ---
 title: "Diferencias Entre Licencia Clase B y Profesionales"
-date: "2024-05-08"
+date: "2026-05-08"
 excerpt: "¿Quieres trabajar transportando carga o pasajeros? Conoce las diferencias legales y técnicas entre las clases de licencia."
 coverImage: "https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

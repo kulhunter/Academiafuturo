@@ -1,6 +1,6 @@
 ---
 title: "Documentos Obligatorios para la Licencia Clase B"
-date: "2024-05-07"
+date: "2026-05-07"
 excerpt: "No pierdas tu hora en el municipio por falta de papeles. Aquí tienes la lista completa de lo que necesitas presentar."
 coverImage: "https://images.unsplash.com/photo-1586769852044-692d6e27d6a0?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

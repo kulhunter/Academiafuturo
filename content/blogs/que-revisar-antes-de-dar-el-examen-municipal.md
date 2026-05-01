@@ -1,6 +1,6 @@
 ---
 title: "Qué Revisar Antes de Dar el Examen Municipal"
-date: "2024-05-05"
+date: "2026-05-05"
 excerpt: "El día del examen práctico los nervios pueden traicionarte. Sigue este checklist para ir preparado y seguro al municipio."
 coverImage: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

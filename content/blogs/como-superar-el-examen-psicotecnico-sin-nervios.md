@@ -1,6 +1,6 @@
 ---
 title: "Cómo Superar el Examen Psicotécnico Sin Nervios"
-date: "2024-05-06"
+date: "2026-05-06"
 excerpt: "Las pruebas de reflejo y coordinación suelen preocupar a los alumnos. Te damos los mejores tips para aprobar el psicotécnico."
 coverImage: "https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

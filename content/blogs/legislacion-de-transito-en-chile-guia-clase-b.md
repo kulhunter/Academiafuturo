@@ -1,6 +1,6 @@
 ---
 title: "Legislación de Tránsito en Chile: Guía para la Licencia Clase B"
-date: "2024-05-02"
+date: "2026-05-02"
 excerpt: "Conoce las leyes fundamentales que rigen el tránsito en Chile y prepárate con éxito para el examen teórico municipal."
 coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

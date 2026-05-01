@@ -11,6 +11,7 @@ export type BlogPost = {
   title: string;
   date: string;
   imageUrl?: string;
+  coverImage?: string;
   content: string;
 };
 
@@ -38,7 +39,8 @@ export function getSortedPostsData(): BlogPost[] {
       slug,
       title: matterResult.data.title,
       date: matterResult.data.date,
-      imageUrl: matterResult.data.imageUrl,
+      imageUrl: matterResult.data.coverImage || matterResult.data.imageUrl,
+      coverImage: matterResult.data.coverImage || matterResult.data.imageUrl,
       content: matterResult.content, // Raw markdown for excerpts
     };
   });
@@ -71,7 +73,8 @@ export async function getPostData(slug: string): Promise<BlogPost> {
     slug,
     title: matterResult.data.title,
     date: matterResult.data.date,
-    imageUrl: matterResult.data.imageUrl,
+    imageUrl: matterResult.data.coverImage || matterResult.data.imageUrl,
+    coverImage: matterResult.data.coverImage || matterResult.data.imageUrl,
     content: contentHtml,
   };
 }

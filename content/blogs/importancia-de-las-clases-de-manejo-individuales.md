@@ -1,6 +1,6 @@
 ---
 title: "La Importancia de las Clases de Manejo Individuales"
-date: "2024-05-04"
+date: "2026-05-04"
 excerpt: "Aprender a conducir requiere atención total. Descubre por qué el modelo de un alumno por auto es el más efectivo."
 coverImage: "https://images.unsplash.com/photo-1590674899484-d5640e524227?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

@@ -1,6 +1,6 @@
 ---
 title: "Mitos Comunes Sobre el Examen de la Municipalidad"
-date: "2024-05-09"
+date: "2026-05-09"
 excerpt: "Muchos rumores circulan sobre la dificultad del examen municipal. Desmitificamos las creencias más comunes para darte tranquilidad."
 coverImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

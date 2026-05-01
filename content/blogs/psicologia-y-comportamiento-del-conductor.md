@@ -1,6 +1,6 @@
 ---
 title: "Psicología y Comportamiento del Conductor: Clave para la Seguridad"
-date: "2024-05-01"
+date: "2026-05-01"
 excerpt: "Entender cómo nuestras emociones y actitudes afectan la conducción es fundamental para evitar accidentes y ser un conductor responsable."
 coverImage: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

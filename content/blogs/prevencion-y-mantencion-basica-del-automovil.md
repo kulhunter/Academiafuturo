@@ -1,6 +1,6 @@
 ---
 title: "Prevención y Mantención Básica del Automóvil"
-date: "2024-05-03"
+date: "2026-05-03"
 excerpt: "Un buen conductor debe conocer su vehículo. Aprende los chequeos básicos que mantienen tu auto seguro y funcional."
 coverImage: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1200"
 author: "Escuela Futuro"

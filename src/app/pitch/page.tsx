@@ -22,7 +22,7 @@ export default function PitchDeck() {
             <LogoFuturo variant="white" layout="vertical" />
           </div>
           <div className="inline-block bg-yellow-400 text-slate-900 px-6 py-2 rounded-full font-black uppercase tracking-widest text-xs mb-8">
-            Estrategia Digital 2024
+            Estrategia Digital 2026
           </div>
           <h1 className="text-6xl md:text-8xl font-black uppercase italic tracking-tighter leading-none mb-6">
             Conducir es un<br/><span className="text-yellow-400">Acto de Confianza.</span>
@@ -174,7 +174,7 @@ export default function PitchDeck() {
                   <td className="p-6 text-right text-slate-900 text-xl">5 UF</td>
                 </tr>
                 <tr className="bg-slate-50 text-slate-900">
-                  <td className="p-6 text-xl font-black uppercase">Inversión Total Proyecto 2024</td>
+                  <td className="p-6 text-xl font-black uppercase">Inversión Total Proyecto 2026</td>
                   <td className="p-6 text-right text-3xl font-black">8 UF</td>
                 </tr>
               </tbody>

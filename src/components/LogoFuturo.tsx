@@ -13,7 +13,10 @@ export default function LogoFuturo({ variant = 'color', layout = 'horizontal', c
   // SVG Base (Cuadrado sólido con bordes redondeados según tríptico)
   const IconSVG = (
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-      <rect width="40" height="40" rx="12" fill={primaryColor} />
+      <rect width="40" height="40" rx="10" fill={primaryColor} />
+      {/* Patrón de cuadritos de carrera (Racing Checkered Pattern) */}
+      <rect x="4" y="4" width="16" height="16" fill={variant === 'white' ? '#1e293b' : '#facc15'} rx="2" />
+      <rect x="20" y="20" width="16" height="16" fill={variant === 'white' ? '#1e293b' : '#facc15'} rx="2" />
     </svg>
   );
 

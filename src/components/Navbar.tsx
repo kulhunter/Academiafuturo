@@ -23,14 +23,16 @@ export default function Navbar() {
                 <LogoFuturo variant="color" layout="horizontal" />
             </Link>
             <div className="hidden lg:flex items-center gap-8 font-black text-slate-600 text-sm uppercase tracking-wide">
-                <a href="/#sedes" className="hover:text-yellow-500 transition">Sedes y Contacto</a>
-                <a href="/#beneficios" className="hover:text-yellow-500 transition">Beneficios</a>
-                <a href="/#planes" className="hover:text-yellow-500 transition text-slate-900"><i className="fa-solid fa-tag text-yellow-500"></i> Promociones</a>
+                <Link href="/#sedes" className="hover:text-yellow-500 transition">Sedes y Contacto</Link>
+                <Link href="/#beneficios" className="hover:text-yellow-500 transition">Beneficios</Link>
+                <Link href="/#planes" className="hover:text-yellow-500 transition text-slate-900">
+                    <i className="fa-solid fa-tag text-yellow-500"></i> Promociones
+                </Link>
                 <Link href="/blog" className="hover:text-yellow-500 transition">Blog Vial</Link>
             </div>
-            <a href="/#planes" className="hidden md:flex bg-yellow-400 text-slate-900 px-6 py-2.5 rounded font-black hover:bg-slate-900 hover:text-yellow-400 transition items-center gap-2 uppercase tracking-widest text-sm shadow-lg shadow-yellow-400/30">
+            <Link href="/#planes" className="hidden md:flex bg-yellow-400 text-slate-900 px-6 py-2.5 rounded font-black hover:bg-slate-900 hover:text-yellow-400 transition items-center gap-2 uppercase tracking-widest text-sm shadow-lg shadow-yellow-400/30">
                 Matricúlate Aquí
-            </a>
+            </Link>
         </div>
       </nav>
     </>

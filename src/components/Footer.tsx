@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LogoFuturo from './LogoFuturo';
 
 export default function Footer() {
@@ -21,8 +22,8 @@ export default function Footer() {
             <div>
                 <h4 className="text-white font-black uppercase tracking-widest mb-6">Accesos</h4>
                 <ul className="space-y-2 text-sm font-bold">
-                    <li><a href="/#planes" className="hover:text-yellow-400 transition">Ver Planes Disponibles</a></li>
-                    <li><a href="/blog" className="hover:text-yellow-400 transition">Blog Vial</a></li>
+                    <li><Link href="/#planes" className="hover:text-yellow-400 transition">Ver Planes Disponibles</Link></li>
+                    <li><Link href="/blog" className="hover:text-yellow-500 transition">Blog Vial</Link></li>
                     <li><a href="https://kulhunter.github.io/examen_claseB/" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition">Acceso Privado Alumnos</a></li>
                 </ul>
             </div>

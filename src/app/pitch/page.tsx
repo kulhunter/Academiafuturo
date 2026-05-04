@@ -114,24 +114,40 @@ export default function PitchDeck() {
             <table className="w-full text-left border-collapse">
               <thead className="bg-slate-900 text-white">
                 <tr>
-                  <th className="p-8 text-xl font-black uppercase">Concepto de Inversión</th>
-                  <th className="p-8 text-xl font-black uppercase text-right">Valor</th>
+                  <th className="p-8 text-xl font-black uppercase">Solución Digital</th>
+                  <th className="p-8 text-xl font-black uppercase text-right">Inversión</th>
                 </tr>
               </thead>
               <tbody className="font-bold text-slate-600">
                 <tr className="border-b border-slate-100">
                   <td className="p-8">
                     <div className="flex flex-col">
-                      <span className="text-slate-900 text-lg uppercase font-black mb-1">Proyecto Evolución Integral</span>
-                      <ul className="text-sm font-medium list-disc list-inside space-y-1">
-                        <li>Diseño Web Human Centric (Escuela de Conductores Futuro)</li>
-                        <li>Sistema de Estudio por Capítulos Integrado (Preguntas Clase B)</li>
-                        <li>Optimización SEO y Embudo de Ventas a WhatsApp</li>
-                        <li>Gestión y Registro de Dominio .CL (Incluido por 1 año)</li>
-                      </ul>
+                      <span className="text-slate-900 text-lg uppercase font-black mb-1">Web Corporativa Premium</span>
+                      <span className="text-sm font-medium">Diseño human-centric, optimización SEO, contacto WhatsApp y Hosting/Dominio .CL incluido.</span>
                     </div>
                   </td>
-                  <td className="p-8 text-right text-slate-900 text-4xl font-black">3 UF</td>
+                  <td className="p-8 text-right text-slate-900 text-2xl font-black whitespace-nowrap">5 UF</td>
+                </tr>
+                <tr className="border-b border-slate-100">
+                  <td className="p-8">
+                    <div className="flex flex-col">
+                      <span className="text-slate-900 text-lg uppercase font-black mb-1">Sistema de Estudio (App Web)</span>
+                      <span className="text-sm font-medium">Motor de exámenes oficial (280+ preguntas), feedback inmediato y panel de capítulos.</span>
+                    </div>
+                  </td>
+                  <td className="p-8 text-right text-slate-900 text-2xl font-black whitespace-nowrap">5 UF</td>
+                </tr>
+                <tr className="bg-blue-50 border-y-2 border-blue-600">
+                  <td className="p-8">
+                    <div className="flex flex-col">
+                      <span className="text-blue-600 text-xl uppercase font-black mb-1 flex items-center gap-2">
+                        Pack Evolución Integral
+                        <span className="bg-blue-600 text-white text-[10px] px-2 py-0.5 rounded-full">OFERTA</span>
+                      </span>
+                      <span className="text-blue-900/70 text-sm font-bold italic">Web Corporativa + Sistema de Estudio (Todo en uno)</span>
+                    </div>
+                  </td>
+                  <td className="p-8 text-right text-blue-600 text-5xl font-black whitespace-nowrap">8 UF</td>
                 </tr>
                 <tr className="bg-slate-50 text-slate-500">
                   <td colSpan={2} className="p-6 text-sm italic">

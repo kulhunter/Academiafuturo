@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import LogoFuturo from '@/components/LogoFuturo';
-import { Globe, BookOpen, ShieldCheck, Heart, UserCheck, MessageCircle, Laptop, Award, BadgeCheck } from 'lucide-react';
+import { Globe, BookOpen, ShieldCheck, Heart, Laptop, Award, BadgeCheck } from 'lucide-react';
 import Link from 'next/link';
 
 export default function PitchDeck() {

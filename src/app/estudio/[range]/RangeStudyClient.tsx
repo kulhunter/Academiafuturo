@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { ChevronLeft, ChevronRight, Check, X, Info, RotateCcw, Home } from 'lucide-react';
@@ -11,7 +11,7 @@ interface RangeStudyClientProps {
   range: string;
 }
 
-export default function RangeStudyClient({ initialQuestions, range }: RangeStudyClientProps) {
+export default function RangeStudyClient({ initialQuestions }: RangeStudyClientProps) {
   const router = useRouter();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState<number[]>([]);

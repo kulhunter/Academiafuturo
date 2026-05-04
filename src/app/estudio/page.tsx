@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BookOpen, CheckCircle, ArrowRight, UserCheck, ShieldCheck, Heart } from 'lucide-react';
+import { BookOpen, ArrowRight, UserCheck, ShieldCheck, Heart } from 'lucide-react';
 
 const ranges = [
   { start: 1, end: 40, label: 'Capítulo 1: Fundamentos y Seguridad' },
@@ -60,7 +60,7 @@ export default function EstudioPage() {
 
             <div className="p-6 bg-slate-900 rounded-2xl text-white">
               <p className="text-slate-300 italic mb-2">
-                "Nuestra meta no es que obtengas la licencia, sino que te sientas seguro y feliz detrás del volante."
+                &quot;Nuestra meta no es que obtengas la licencia, sino que te sientas seguro y feliz detrás del volante.&quot;
               </p>
               <p className="font-bold">— Equipo Academia Futuro</p>
             </div>

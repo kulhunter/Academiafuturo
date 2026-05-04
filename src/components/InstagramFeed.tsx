@@ -1,5 +1,5 @@
 'use client';
-import { Instagram, Heart, MessageCircle, ExternalLink } from 'lucide-react';
+import { Camera, Heart, MessageCircle, ExternalLink } from 'lucide-react';
 
 const instagramPosts = [
   {
@@ -32,7 +32,7 @@ export default function InstagramFeed() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 text-center md:text-left gap-6">
           <div>
             <span className="inline-flex items-center gap-2 bg-blue-600/20 text-blue-400 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-4">
-              <Instagram className="w-4 h-4" />
+              <Camera className="w-4 h-4" />
               Nuestra Comunidad
             </span>
             <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
@@ -80,7 +80,7 @@ export default function InstagramFeed() {
 
               <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
                 <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:bg-white group-hover:text-blue-600 transition-colors">
-                  <Instagram className="w-5 h-5" />
+                  <i className="fa-brands fa-instagram text-xl"></i>
                 </div>
               </div>
             </a>

@@ -138,18 +138,18 @@ export default function RangeStudyClient({ initialQuestions }: RangeStudyClientP
 
           <div className="grid gap-3">
             {currentQuestion.opciones.map((op, idx) => {
-              let variant = "border-slate-200 hover:border-blue-200 hover:bg-blue-50/50";
+              let variant = "border-slate-300 text-slate-800 bg-white hover:border-blue-400 hover:bg-blue-50/50";
               
               if (showResult) {
                 if (isCorrectOption(idx)) {
-                  variant = "bg-green-50 border-green-500 text-green-700 ring-1 ring-green-500";
+                  variant = "bg-green-100 border-green-600 text-green-900 ring-2 ring-green-600";
                 } else if (isSelected(idx)) {
-                  variant = "bg-red-50 border-red-500 text-red-700 ring-1 ring-red-500";
+                  variant = "bg-red-100 border-red-600 text-red-900 ring-2 ring-red-600";
                 } else {
-                  variant = "opacity-50 border-slate-200";
+                  variant = "opacity-40 border-slate-200 text-slate-400";
                 }
               } else if (isSelected(idx)) {
-                variant = "bg-blue-600 border-blue-600 text-white shadow-lg shadow-blue-600/20";
+                variant = "bg-blue-700 border-blue-700 text-white shadow-xl shadow-blue-700/30";
               }
 
               return (
@@ -157,9 +157,9 @@ export default function RangeStudyClient({ initialQuestions }: RangeStudyClientP
                   key={idx}
                   onClick={() => handleOptionClick(idx)}
                   disabled={showResult}
-                  className={`w-full text-left p-5 rounded-2xl border-2 transition-all flex items-center justify-between group ${variant}`}
+                  className={`w-full text-left p-6 rounded-2xl border-2 transition-all flex items-center justify-between group shadow-sm ${variant}`}
                 >
-                  <span className="font-medium text-lg">{op}</span>
+                  <span className="font-bold text-lg leading-tight">{op}</span>
                   {showResult && isCorrectOption(idx) && (
                     <Check className="w-6 h-6 shrink-0" />
                   )}
@@ -177,7 +177,7 @@ export default function RangeStudyClient({ initialQuestions }: RangeStudyClientP
               <button
                 onClick={checkAnswer}
                 disabled={selectedOptions.length === 0}
-                className="flex-1 bg-slate-900 text-white font-bold py-5 rounded-2xl hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                className="flex-1 bg-slate-900 text-white font-black py-6 rounded-2xl hover:bg-blue-700 disabled:opacity-30 disabled:cursor-not-allowed transition-all uppercase tracking-widest shadow-xl"
               >
                 Comprobar Respuesta
               </button>

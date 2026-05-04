@@ -1,78 +1,95 @@
 'use client';
-import Script from 'next/script';
-import { useEffect } from 'react';
+import { Instagram, Heart, MessageCircle, ExternalLink } from 'lucide-react';
+
+const instagramPosts = [
+  {
+    id: 1,
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=600",
+    likes: 124,
+    comments: 12,
+    url: "https://www.instagram.com/escueladeconductoresfuturo/"
+  },
+  {
+    id: 2,
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=600",
+    likes: 89,
+    comments: 5,
+    url: "https://www.instagram.com/escueladeconductoresfuturo/"
+  },
+  {
+    id: 3,
+    image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=600",
+    likes: 210,
+    comments: 18,
+    url: "https://www.instagram.com/escueladeconductoresfuturo/"
+  }
+];
 
 export default function InstagramFeed() {
-  useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const instgrm = (window as any).instgrm;
-    if (instgrm) {
-      instgrm.Embeds.process();
-    }
-  }, []);
-
-  const embeds = [
-    "https://www.instagram.com/p/CnK3eMHu_Oh/",
-    "https://www.instagram.com/p/CnDtc8vODMu/",
-    "https://www.instagram.com/p/CnDsw6zuyUu/",
-    "https://www.instagram.com/p/B_jOAuWjHBh/",
-    "https://www.instagram.com/p/CnDspViO690/"
-  ];
-
   return (
     <section className="py-24 bg-slate-900 text-white overflow-hidden">
-      <Script 
-        src="https://www.instagram.com/embed.js" 
-        strategy="afterInteractive" 
-        onLoad={() => {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          const instgrm = (window as any).instgrm;
-          if (instgrm) {
-            instgrm.Embeds.process();
-          }
-        }}
-      />
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 text-center md:text-left gap-6">
           <div>
-            <span className="text-yellow-400 font-black tracking-widest uppercase text-sm mb-2 block">
-              <i className="fa-brands fa-instagram mr-2"></i> Nuestra Comunidad
+            <span className="inline-flex items-center gap-2 bg-blue-600/20 text-blue-400 px-4 py-1.5 rounded-full text-xs font-black tracking-widest uppercase mb-4">
+              <Instagram className="w-4 h-4" />
+              Nuestra Comunidad
             </span>
             <h2 className="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">
-              Pasión por <span className="text-yellow-400">Enseñar</span>
+              Pasión por <span className="text-blue-500">Enseñar</span>
             </h2>
           </div>
-          <a href="https://www.instagram.com/escueladeconductoresfuturo/" target="_blank" rel="noreferrer" className="bg-yellow-400 text-slate-900 font-black px-8 py-4 rounded-xl text-sm uppercase tracking-widest hover:bg-white transition-all shadow-lg">
+          <a 
+            href="https://www.instagram.com/escueladeconductoresfuturo/" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="group bg-blue-600 text-white font-black px-8 py-4 rounded-xl text-sm uppercase tracking-widest hover:bg-white hover:text-blue-600 transition-all shadow-xl shadow-blue-600/20 flex items-center gap-2"
+          >
             Seguir en Instagram
+            <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {embeds.slice(0, 3).map((url, i) => (
-            <div key={i} className="flex justify-center transform hover:scale-[1.02] transition-transform duration-500">
-              <div className="w-full max-w-[400px] bg-white rounded-2xl p-1 shadow-2xl">
-                <blockquote 
-                  className="instagram-media" 
-                  data-instgrm-permalink={url} 
-                  data-instgrm-version="14"
-                  style={{ 
-                      background: '#FFF', 
-                      border: 0, 
-                      borderRadius: '16px', 
-                      boxShadow: 'none', 
-                      margin: '0', 
-                      width: '100%' 
-                  }}
-                >
-                </blockquote>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {instagramPosts.map((post) => (
+            <a 
+              key={post.id} 
+              href={post.url}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative bg-slate-800 rounded-3xl overflow-hidden aspect-square shadow-2xl"
+            >
+              <img 
+                src={post.image} 
+                alt="Instagram post" 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+              
+              {/* Hover Overlay */}
+              <div className="absolute inset-0 flex items-center justify-center gap-6 opacity-0 group-hover:opacity-100 transition-opacity bg-blue-600/40 backdrop-blur-[2px]">
+                <div className="flex items-center gap-2 font-black text-xl">
+                  <Heart className="w-6 h-6 fill-current" />
+                  {post.likes}
+                </div>
+                <div className="flex items-center gap-2 font-black text-xl">
+                  <MessageCircle className="w-6 h-6 fill-current" />
+                  {post.comments}
+                </div>
               </div>
-            </div>
+
+              <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                <div className="w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+                  <Instagram className="w-5 h-5" />
+                </div>
+              </div>
+            </a>
           ))}
         </div>
         
         <div className="mt-16 text-center">
-            <p className="text-slate-400 font-bold mb-8 italic">Únete a los cientos de alumnos que ya perdieron el miedo a conducir.</p>
-            <div className="h-px w-32 bg-slate-800 mx-auto"></div>
+            <p className="text-slate-500 font-bold mb-8 italic">Únete a los cientos de alumnos que ya perdieron el miedo a conducir.</p>
+            <div className="h-1 w-32 bg-gradient-to-r from-transparent via-blue-600 to-transparent mx-auto"></div>
         </div>
       </div>
     </section>
